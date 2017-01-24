@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://junwin.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://junwin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://junwin.github.io//" rel="alternate" type="text/html" /><updated>2017-01-24T16:36:55-06:00</updated><id>https://junwin.github.io///</id><title type="html">John Unwin’s ramblings</title><subtitle>Some ramblings about different topics
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://junwin.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://junwin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://junwin.github.io//" rel="alternate" type="text/html" /><updated>2017-01-24T16:47:50-06:00</updated><id>https://junwin.github.io///</id><title type="html">John Unwin’s ramblings</title><subtitle>Some ramblings about different topics
 </subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://junwin.github.io//jekyll/update/2017/01/24/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-01-24T15:45:18-06:00</published><updated>2017-01-24T15:45:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/24/welcome-to-jekyll</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/24/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
@@ -11,4 +11,78 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="https://junwin.github.io//jekyll/update/2017/01/24/continuous-delivery.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-01-24T15:45:18-06:00</published><updated>2017-01-24T15:45:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/24/continuous-delivery</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/24/continuous-delivery.html">&lt;p&gt;Continuous Integration
+Continuous Delivery&lt;/p&gt;
+
+&lt;p&gt;Continuous Integration(CI)
+Enable you to make changes quickly and easily
+Auto Detect code committed
+Build
+Run Unit Tests
+Deploy Service
+Run Service tests&lt;/p&gt;
+
+&lt;p&gt;Jez Humble - 3 questions
+Do you check into the mainline each day?
+This includes integrating short lived branches to the main.&lt;/p&gt;
+
+&lt;p&gt;Do you have a suite of tests to validate your changes?&lt;/p&gt;
+
+&lt;p&gt;When the build is broken is it the #1 team priority to fix it?&lt;/p&gt;
+
+&lt;p&gt;Options
+1 Global Build for all services (clumsy when there are numerous service, plus how do you know what to deploy)
+2 Single Source tree N builds (at a folder level) - can encourage coupling by checking in changes for N services once
+3 Single CI Process per Service - each service has its own repo(code and tests) and build process - implies a repo per service and a build for each service&lt;/p&gt;
+
+&lt;p&gt;Principle&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Avoid lock-step releases&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Exceptions
+At the start may well be better to go for option 1 while the service boundaries are in some flux, then move them to 3 as API’s stabilize&lt;/p&gt;
+
+&lt;p&gt;Continuous Delivery
+Build Pipelines and continuous delivery(compile and unit tests, Slow Tests, deploy UAT, performance tests, deploy to prod)
+Model the standard release process
+Aim is to get quick feedback on the production readiness of each and every check-in
+One pipeline per service&lt;/p&gt;
+
+&lt;p&gt;Artifacts
+jars, wars or rpm, NuGet, chocolaty
+What about multiple OS’s
+Custom VM images
+Netflicks bake their services as AWS images (AMI’s Amazon machine images)&lt;/p&gt;
+
+&lt;p&gt;Immutable Server
+To avoid configuration drift, you need the pipeline to build an entire machine.&lt;/p&gt;
+
+&lt;p&gt;Service Configuration
+Avoid building and artifact per environment (how can you really validate, plus need to store secure ids etc.), use settings file or configuration system.&lt;/p&gt;
+
+&lt;p&gt;Mapping Services to machines(Hosts)
+Think of hosts as an OS where a service can be deployed - physical hardware can support 1..N hosts&lt;/p&gt;
+
+&lt;p&gt;N Services per host is simple but has issues (performance of one affects others, different dependencies, risk, ripple affect, may results in centralized team to manage host, limits deployment options)&lt;/p&gt;
+
+&lt;p&gt;Application Containers (IIS, Tomcat) Provides clustering, monitoring and more efficient use of resources, but you need to buy into the technology stack, the features offered may constrain and not scale, lifecycle management is more complex, monitoring and analysis is harder if N services share some container&lt;/p&gt;
+
+&lt;p&gt;Single Service per host - can reduce single points of failure, simplify monitoring and remediation, an outage only affects a single host, can scale service independently of each other, can use services deployed as images and the immutable server pattern.
+Note that single service per host can be quite expensive an extreme would be where a host is a physical machine, hence VMs and containers like Docker&lt;/p&gt;
+
+&lt;p&gt;Platform as a Service PaaS - takes an artifact like a war file or gem and provisions and runs them.&lt;/p&gt;
+
+&lt;p&gt;Automation
+A must if you go down a Service per Host route&lt;/p&gt;
+
+&lt;p&gt;Appendix - Artifacts
+You add web components to a J2EE application in a package called a web application archive (WAR), which is a JAR similar to the package used for Java class libraries. A WAR usually contains other resources besides web components, including:&lt;/p&gt;
+
+&lt;p&gt;Server-side utility classes (database beans, shopping carts, and so on).
+Static web resources (HTML, image, and sound files, and so on)
+Client-side classes (applets and utility classes)
+A WAR has a specific hierarchical directory structure. The top-level directory of a WAR is the document root of the application. The document root is where JSP pages, client-side classes and archives, and static web resources are stored.&lt;/p&gt;
+
+&lt;p&gt;So a .war is a .jar, but it contains web application components and is laid out according to a specific structure. A .war is designed to be deployed to a web application server such as Tomcat or Jetty or a Java EE server such as JBoss or Glassfish.&lt;/p&gt;</content><summary type="html">Continuous Integration
+Continuous Delivery</summary></entry></feed>
