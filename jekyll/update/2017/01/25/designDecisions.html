@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>John Unwin&#39;s ramblings</title>
-  <meta name="description" content="Some ramblings about different topics">
+  <title>design decisions</title>
+  <meta name="description" content="1) SOA Vs ESB Vs Staged Events In the context of trade flow I do not think this is appropriate because of the point to point nature of SOA, which introduces ...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="https://junwin.github.io//">
+  <link rel="canonical" href="https://junwin.github.io//jekyll/update/2017/01/25/designDecisions.html">
   <link rel="alternate" type="application/rss+xml" title="John Unwin&#39;s ramblings" href="/feed.xml">
   
   
@@ -58,52 +58,29 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">design decisions</h1>
+    <p class="post-meta"><time datetime="2017-01-25T08:05:18-06:00" itemprop="datePublished">Jan 25, 2017</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>1)  SOA Vs ESB Vs Staged Events
+In the context of trade flow I do not think this is appropriate because of the point to point nature of SOA, which introduces unnecessary coupling.</p>
+
+<p>Enterprise Service Bus bases architecture (ESB)
+An ESB typically provides features to assist developers in translating and converting the format of the requests and responses that concern them as well as filtering and content-based routing capabilities. These welcome benefits need to offset against the fact that the underlying architecture is generally still point to point SOA with the coupling issues.</p>
+
+<p>An event driven architecture (EDA) can will deliver the same filtering, transforming and routing capabilities as an ESB, but with a less “point to point” design that emphasizes decentralization and decoupling of systems. Essentially this model consists of a messaging fabric that connects a set of applications (Producers and Consumers) where all participants can potentially see all events. It hinges around using a canonical data model(e.g. trades and allocations rendered a FIX 5.0) for all of the content to significantly reduce coupling.</p>
+
+<p>A staged event driven architecture (SEDA) is an extension of an EDA except the use of a pipeline of applications is made explicit.
+dsff</p>
+
+  </div>
+
   
-  
-
-
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Jan 25, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/01/25/testing.html">testing notes</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 25, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/01/25/designDecisions.html">design decisions</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 24, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/01/24/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 24, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/01/24/continuous-delivery.html">Continous Delivery</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </main>

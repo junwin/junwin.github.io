@@ -1,5 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://junwin.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://junwin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://junwin.github.io//" rel="alternate" type="text/html" /><updated>2017-01-25T07:47:55-06:00</updated><id>https://junwin.github.io///</id><title type="html">John Unwin’s ramblings</title><subtitle>Some ramblings about different topics
-</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://junwin.github.io//jekyll/update/2017/01/24/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-01-24T15:45:18-06:00</published><updated>2017-01-24T15:45:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/24/welcome-to-jekyll</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/24/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://junwin.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://junwin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://junwin.github.io//" rel="alternate" type="text/html" /><updated>2017-01-25T08:14:32-06:00</updated><id>https://junwin.github.io///</id><title type="html">John Unwin’s ramblings</title><subtitle>Some ramblings about different topics
+</subtitle><entry><title type="html">testing notes</title><link href="https://junwin.github.io//jekyll/update/2017/01/25/testing.html" rel="alternate" type="text/html" title="testing notes" /><published>2017-01-25T08:05:18-06:00</published><updated>2017-01-25T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/25/testing</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/25/testing.html">&lt;p&gt;In his book Succeeding with Agile Mike Cohn outlines the Test Pyramid&lt;/p&gt;
+
+&lt;p&gt;Unit tests
+Service tests
+End-to-end tests&lt;/p&gt;
+
+&lt;p&gt;Beware of snow cones, Cohn’s pyramid inverted where there are more End-to-end and Service tests than unit tests - characterized as by very slow test runs and slow feedback.&lt;/p&gt;
+
+&lt;p&gt;End-to-end testing can be tricky e.g. What versions of the different combined  services do we want to use (current prod or new release candidates), also duplication of tests that each individual service would run.
+Could have all the individual services “fan in” to a general end-to-end testing, downsides can be flaky and brittle tests, these can fail for a variety of resons that are not related to the services, and can precipitate “normalization of deviance” - Diane Vaughan. Need to remove or fix flaky tests!&lt;/p&gt;
+
+&lt;p&gt;Version Numbers - avoid inadvertently having a single version number for N services “Now you have 2.1.0 problems” Brandon Bryars - this results in loosing a key advantage of being able to deploy single services&lt;/p&gt;
+
+&lt;p&gt;Consumer Driven Tests - these can help reduce the issues in E2E testing by defining consumer driven contracts, these reflect how different consumers of the service use the service, they are at about the same level in the pyramid as service tests.
+E2E tests can be like training wheels precursor to better CDTs&lt;/p&gt;
+
+&lt;p&gt;You cant reduce bugs in prod to 0, and there are diminishing returns&lt;/p&gt;
+
+&lt;p&gt;Blue/Green testing - 2 versions deployed to Prod, ability to switch requests to one, but rapid fall back to the other.&lt;/p&gt;
+
+&lt;p&gt;Canary testing -does it work as expected, e.g. Netflicks recommender systems validate the number of sales does not drop. Can either divert real production request to the service or replicate some requests to compare results Vs. current prod.&lt;/p&gt;
+
+&lt;p&gt;Mean time between failures Vs. Mean time to repair&lt;/p&gt;
+
+&lt;p&gt;Cross-functional testing - covers effects/behaviors that cannot be implemented like a normal feature - often affected by cross cutting concerns when developing a service e.g. latency, number of supported users, security, way the UI works&lt;/p&gt;
+
+&lt;p&gt;Performance tests&lt;/p&gt;</content><summary type="html">In his book Succeeding with Agile Mike Cohn outlines the Test Pyramid</summary></entry><entry><title type="html">design decisions</title><link href="https://junwin.github.io//jekyll/update/2017/01/25/designDecisions.html" rel="alternate" type="text/html" title="design decisions" /><published>2017-01-25T08:05:18-06:00</published><updated>2017-01-25T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/25/designDecisions</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/25/designDecisions.html">&lt;p&gt;1)  SOA Vs ESB Vs Staged Events
+In the context of trade flow I do not think this is appropriate because of the point to point nature of SOA, which introduces unnecessary coupling.&lt;/p&gt;
+
+&lt;p&gt;Enterprise Service Bus bases architecture (ESB)
+An ESB typically provides features to assist developers in translating and converting the format of the requests and responses that concern them as well as filtering and content-based routing capabilities. These welcome benefits need to offset against the fact that the underlying architecture is generally still point to point SOA with the coupling issues.&lt;/p&gt;
+
+&lt;p&gt;An event driven architecture (EDA) can will deliver the same filtering, transforming and routing capabilities as an ESB, but with a less “point to point” design that emphasizes decentralization and decoupling of systems. Essentially this model consists of a messaging fabric that connects a set of applications (Producers and Consumers) where all participants can potentially see all events. It hinges around using a canonical data model(e.g. trades and allocations rendered a FIX 5.0) for all of the content to significantly reduce coupling.&lt;/p&gt;
+
+&lt;p&gt;A staged event driven architecture (SEDA) is an extension of an EDA except the use of a pipeline of applications is made explicit.
+dsff&lt;/p&gt;</content><summary type="html">1)  SOA Vs ESB Vs Staged Events
+In the context of trade flow I do not think this is appropriate because of the point to point nature of SOA, which introduces unnecessary coupling.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="https://junwin.github.io//jekyll/update/2017/01/24/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-01-24T15:45:18-06:00</published><updated>2017-01-24T15:45:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/24/welcome-to-jekyll</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/24/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
