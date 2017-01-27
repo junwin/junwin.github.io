@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://junwin.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://junwin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://junwin.github.io//" rel="alternate" type="text/html" /><updated>2017-01-27T15:33:41-06:00</updated><id>https://junwin.github.io///</id><title type="html">John Unwin’s ramblings</title><subtitle>Some ramblings about different topics
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://junwin.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://junwin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://junwin.github.io//" rel="alternate" type="text/html" /><updated>2017-01-27T16:41:42-06:00</updated><id>https://junwin.github.io///</id><title type="html">John Unwin’s ramblings</title><subtitle>Some ramblings about different topics
 </subtitle><entry><title type="html">Writing style - George Orwell</title><link href="https://junwin.github.io//jekyll/update/2017/01/27/writing-style.html" rel="alternate" type="text/html" title="Writing style - George Orwell" /><published>2017-01-27T08:05:18-06:00</published><updated>2017-01-27T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/27/writing-style</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/27/writing-style.html">&lt;p&gt;George Orwell wrote some simple rules in Politics and the English Language&lt;/p&gt;
 
 &lt;ol&gt;
@@ -163,7 +163,61 @@ Client-side classes (applets and utility classes)
 A WAR has a specific hierarchical directory structure. The top-level directory of a WAR is the document root of the application. The document root is where JSP pages, client-side classes and archives, and static web resources are stored.&lt;/p&gt;
 
 &lt;p&gt;So a .war is a .jar, but it contains web application components and is laid out according to a specific structure. A .war is designed to be deployed to a web application server such as Tomcat or Jetty or a Java EE server such as JBoss or Glassfish.&lt;/p&gt;</content><summary type="html">Continuous Integration
-Continuous Delivery</summary></entry><entry><title type="html">Why the cloud matters to your development team</title><link href="https://junwin.github.io//jekyll/update/2015/09/15/whycloud-metters.html" rel="alternate" type="text/html" title="Why the cloud matters to your development team" /><published>2015-09-15T09:05:18-05:00</published><updated>2015-09-15T09:05:18-05:00</updated><id>https://junwin.github.io//jekyll/update/2015/09/15/whycloud-metters</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2015/09/15/whycloud-metters.html">&lt;p&gt;I was reading an interview about cloud based platforms with Adrian Cockroft written by Stefan Tikov in September edition of IEEE Computing Edge. What really struck a chord was when Cockroft says “The biggest change is when someone working at a company thinks, I need some machines to do something”&lt;/p&gt;
+Continuous Delivery</summary></entry><entry><title type="html">A quick introduction to scrum</title><link href="https://junwin.github.io//jekyll/update/2017/01/01/quickintro-scrum.html" rel="alternate" type="text/html" title="A quick introduction to scrum" /><published>2017-01-01T08:05:18-06:00</published><updated>2017-01-01T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/01/quickintro-scrum</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/01/quickintro-scrum.html">&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;
+This is a quick introduction to scrum&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is Scrum?&lt;/strong&gt;
+Scrum is a framework to help small teams of around seven people develop complex products. Scrum can also be used for non-software projects. The work in scrum is done in short work cycles – for example, two weeks – called sprints. A key part of scrum is for the team to regularly inspect and adapt.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Artifacts&lt;/strong&gt;
+The main artifacts of scrum are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Features – features are the key things a product must support or do to make it fit for purpose. One or more features are packaged and delivered as a product release so that the product is delivered over a set of releases.&lt;/li&gt;
+  &lt;li&gt;Stories – Each feature will have one or more stories, each describing a piece of work needed to deliver the feature. All stories are put into a list called the Product Backlog. Each sprint is comprised of stories selected by the product owner. The Sprint Backlog is a list of the stories to be executed in a sprint.There are many other artifacts such as burn charts, test plans, test evidence, design notes – the scrum team uses these as required.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Key roles in Scrum&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There are three main roles in scrum the Product Owner, Scrum Master and Team members.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Product Owner
+The product is an empowered business leader who directs the team to the work that produces highest ROI.  Their key responsibilities are to control what goes in the product backlog, set priorities and be the definitive source of information about what the product needs to do. They typically determine the acceptance criteria, and agree that completed work meets the criteria. Note that the absence of day to day involvement by a product owner from the business is the harbinger of badly run scrum/agile processes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Scrum Master
+The scrum master is not in charge of the team; they bring expertise in scrum, facilitate and coach the scrum process, and remove obstacles and impediments that block progress.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Team Members
+Team members may have different areas of expertise and form part of a self-organizing unit. They own the technical decisions, determine the task for each story, are committed to estimates and the sprint timeline and identify and use best practices and tools.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Product Backlog&lt;/strong&gt;
+The product backlog is a list of all the stories needed for the product. These stories can be in different states of definition; some may just have the title, others may be fully defined in terms of acceptance criteria and tasks. A regular meeting of the team and product owner – called grooming – is used to identify stories and get all the details in place so that they are “sprint ready”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sprint Backlog&lt;/strong&gt;
+The sprint backlog is the list of stories and defects to be executed in a sprint. Stories must be complete and sprint ready before adding them to the sprint backlog. Once the backlog is agreed for a sprint it should not be changed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Story&lt;/strong&gt;
+At the heart of scrum are stories. Stories describe work that is needed to implement a feature, each story identifies who uses the function, what they are trying to do and crucially how it adds value to the business. A story needs to have clear acceptance criteria agreed with the product owner so that everyone knows when the story is done. Tools such as specification by example (SBE) may be used to provide concrete acceptance criteria. Stories have a size determined by the team, the method for sizing varies but often might be tee shirt sizes (S M L XL) or ideal days (1, 2, 3, 5, 8). Some teams will limit the size of a single story say to 5 ideal days. A story will have the tasks, test plans and any design or technical notes added by the team.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sprint Planning&lt;/strong&gt;
+A sprint planning meeting is held with the team and the product owner to determine what stories will be executed in the next sprint based on the priorities laid down by the product owner.  Part of the planning is assess how much work capacity the team has during the sprint in terms of story points, to ensure that the number of stories will not exceed the teams capacity.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Daily Scrum&lt;/strong&gt;
+The daily scrum (or standup) meeting is held each day at the same time, the meeting should be short 15 minutes for an average team. It is focused on each team member saying what tasks they have completed, what tasks they expect to complete in the next day, and if there are any issues or impediments preventing them for working.
+It is normal that people have ideas, ask for help or technical guidance during the standup, these are encouraged. However, they should take place between the relevant people after the daily scrum and not during the scrum.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sprint Review&lt;/strong&gt;
+The sprint review is a meeting with the product owner (and business stakeholders) to demonstrate and accept completion of the sprint’s stories, identify what was not completed, and to get feedback so that any changes are handled sooner rather than later. A typical sprint review would take about an hour.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Retrospective&lt;/strong&gt;
+The purpose of the retrospective meeting is to improve the process by identifying what went well and where improvement is needed. A goal might be to identify 1-2 process improvements that can be adopted in the next sprint.&lt;/p&gt;
+
+&lt;p&gt;If you found this useful take a look at: Scrum: a Breathtakingly Brief and Agile Introduction&lt;/p&gt;</content><summary type="html">Introduction
+This is a quick introduction to scrum</summary></entry><entry><title type="html">Why the cloud matters to your development team</title><link href="https://junwin.github.io//jekyll/update/2015/09/15/whycloud-metters.html" rel="alternate" type="text/html" title="Why the cloud matters to your development team" /><published>2015-09-15T09:05:18-05:00</published><updated>2015-09-15T09:05:18-05:00</updated><id>https://junwin.github.io//jekyll/update/2015/09/15/whycloud-metters</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2015/09/15/whycloud-metters.html">&lt;p&gt;I was reading an interview about cloud based platforms with Adrian Cockroft written by Stefan Tikov in September edition of IEEE Computing Edge. What really struck a chord was when Cockroft says “The biggest change is when someone working at a company thinks, I need some machines to do something”&lt;/p&gt;
 
 &lt;p&gt;The problem is that in companies with older operating models, to even get a single machine is a long and expensive process submitting tickets, arguing your case for the type and size of hardware with IT and procurement before finally some hardware arrives. In many larger companies the process takes months. Generally even then there is little control or access to configure things for optimum performance.&lt;/p&gt;
 
