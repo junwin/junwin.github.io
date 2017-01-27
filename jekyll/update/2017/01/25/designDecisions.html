@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>design decisions</title>
-  <meta name="description" content="1) SOA Vs ESB Vs Staged Events In the context of trade flow I do not think this is appropriate because of the point to point nature of SOA, which introduces ...">
+  <title>SOA, ESB and event driven architectures -  oh my!!</title>
+  <meta name="description" content="1) Service Orientated Architecture (SOA) SOA is an architectural concept where different services can be discovered and their interfaces are developed so tha...">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="https://junwin.github.io//jekyll/update/2017/01/25/designDecisions.html">
@@ -61,21 +61,38 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">design decisions</h1>
+    <h1 class="post-title" itemprop="name headline">SOA, ESB and event driven architectures -  oh my!!</h1>
     <p class="post-meta"><time datetime="2017-01-25T08:05:18-06:00" itemprop="datePublished">Jan 25, 2017</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>1)  SOA Vs ESB Vs Staged Events
-In the context of trade flow I do not think this is appropriate because of the point to point nature of SOA, which introduces unnecessary coupling.</p>
+    <p>1)  Service Orientated Architecture (SOA)
+SOA is an architectural concept where different services can be discovered and their interfaces are developed so that different systems can use them irrespective of the development platform. Its key goal is to facilitate reuse of common services with an organization or some wider ecosystem. The main features are:</p>
+<ul>
+  <li>Services are can be used without consideration of how they were developed or where they are deployed.</li>
+  <li>The employ a request response model, where communication is initiated by the client/consumer, and results are synchronously returned from the service.</li>
+  <li>Only one client/consumer can use the service at a time.</li>
+</ul>
 
-<p>Enterprise Service Bus bases architecture (ESB)
-An ESB typically provides features to assist developers in translating and converting the format of the requests and responses that concern them as well as filtering and content-based routing capabilities. These welcome benefits need to offset against the fact that the underlying architecture is generally still point to point SOA with the coupling issues.</p>
+<p>A draw back to the SOA model is that it is centralized and additional methods are needed to provide failover and scaling.
+Clients are coupled to the service by consuming its interface, thus changes to the service can impact the client.</p>
 
-<p>An event driven architecture (EDA) can will deliver the same filtering, transforming and routing capabilities as an ESB, but with a less “point to point” design that emphasizes decentralization and decoupling of systems. Essentially this model consists of a messaging fabric that connects a set of applications (Producers and Consumers) where all participants can potentially see all events. It hinges around using a canonical data model(e.g. trades and allocations rendered a FIX 5.0) for all of the content to significantly reduce coupling.</p>
+<p>2) Enterprise Service Bus bases architecture (ESB)
+An ESB usually has a centralized bus that is used to route messages to different components. The ESB provides additional features to facilitate translating and converting the format of the requests and responses that concern them as well as filtering and content-based routing capabilities. Despite the features provided by an ESB, the essential architecture is still point to point SOA and has the same problems with coupling and centralization.</p>
 
-<p>A staged event driven architecture (SEDA) is an extension of an EDA except the use of a pipeline of applications is made explicit.
-dsff</p>
+<p>3) Event Driven Architecture (EDA)
+An Event Driven Architecture(EDA) uses messaging fabric to connect a set of applications. It does not use a point to point design, any given application can usually see all the events raised by other applications. The EDA provides the equivalent filtering, transforming and routing capabilities as an ESB. However, the EDA puts emphasis on decoupling and decentralization. An EDA generally uses a canonical model to decouple different components, in trading applications this is often based on FIX protocol.</p>
+
+<p>4) Staged Event Driven Architecture (SEDA)
+A staged event driven architecture (SEDA)  decomposes a complex system into a series of stages connected by queues. SEDA is a variant of an EDA that explicitly exposes a pipe-line of operations, the main benefits are:</p>
+<ul>
+  <li>It can produce a highly scalable solution, with no centralized points of failure.</li>
+  <li>It simplifies the rollout of additional components, and eases the on-going maintenance overheads.</li>
+</ul>
+
+<p>It is suited to circumstances where actions depend on some event, for example, when some data becomes available (an event) a pipe line of actions are performed. In most cases these events are modeled as messages that can be sent to one or more components (stages).
+Events flow from producers to components that consume (and may produce) along a predefined sequence with no use of a central routing service.</p>
+
 
   </div>
 
@@ -99,8 +116,6 @@ dsff</p>
               John Unwin&#39;s ramblings
             
             </li>
-            
-            <li><a href="mailto:your-email@domain.com">your-email@domain.com</a></li>
             
         </ul>
       </div>
