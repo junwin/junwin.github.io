@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Continous Delivery</title>
+  <title>Continuous Delivery</title>
   <meta name="description" content="Continuous Integration Continuous Delivery">
 
   <link rel="stylesheet" href="/assets/main.css">
@@ -61,7 +61,7 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Continous Delivery</h1>
+    <h1 class="post-title" itemprop="name headline">Continuous Delivery</h1>
     <p class="post-meta"><time datetime="2017-01-24T15:45:18-06:00" itemprop="datePublished">Jan 24, 2017</time></p>
   </header>
 
@@ -69,23 +69,27 @@
     <p>Continuous Integration
 Continuous Delivery</p>
 
-<p>Continuous Integration(CI)
-Enable you to make changes quickly and easily
-Auto Detect code committed
-Build
-Run Unit Tests
-Deploy Service
-Run Service tests</p>
+<p><strong>Continuous Integration(CI)</strong></p>
 
-<p>Jez Humble - 3 questions
-Do you check into the mainline each day?
-This includes integrating short lived branches to the main.</p>
+<ul>
+  <li>Enable you to make changes quickly and easily</li>
+  <li>Auto Detect code committed</li>
+  <li>Build</li>
+  <li>Run Unit Tests</li>
+  <li>Deploy Service</li>
+  <li>Run Service tests</li>
+</ul>
 
-<p>Do you have a suite of tests to validate your changes?</p>
+<p><strong>Jez Humble - 3 questions</strong></p>
 
-<p>When the build is broken is it the #1 team priority to fix it?</p>
+<ul>
+  <li>Do you check into the mainline each day? This includes integrating short lived branches to the main.</li>
+  <li>Do you have a suite of tests to validate your changes?</li>
+  <li>When the build is broken is it the #1 team priority to fix it?</li>
+</ul>
 
-<p>Options</p>
+<p><strong>Options</strong></p>
+
 <ul>
   <li>Global Build for all services (clumsy when there are numerous service, plus how do you know what to deploy)</li>
   <li>Single Source tree N builds (at a folder level) - can encourage coupling by checking in changes for N services once</li>
@@ -97,28 +101,32 @@ This includes integrating short lived branches to the main.</p>
   <li>Avoid lock-step releases</li>
 </ul>
 
-<p>Exceptions
+<p><strong>Exceptions</strong>
 At the start may well be better to go for option 1 while the service boundaries are in some flux, then move them to 3 as API’s stabilize</p>
 
-<p>Continuous Delivery
-Build Pipelines and continuous delivery(compile and unit tests, Slow Tests, deploy UAT, performance tests, deploy to prod)
-Model the standard release process
-Aim is to get quick feedback on the production readiness of each and every check-in
-One pipeline per service</p>
+<p><strong>Continuous Delivery</strong></p>
 
-<p>Artifacts
-jars, wars or rpm, NuGet, chocolaty
-What about multiple OS’s
-Custom VM images
-Netflicks bake their services as AWS images (AMI’s Amazon machine images)</p>
+<ul>
+  <li>Build Pipelines and continuous delivery(compile and unit tests, Slow Tests, deploy UAT, performance tests, deploy to prod)</li>
+  <li>Model the standard release process</li>
+  <li>Aim is to get quick feedback on the production readiness of each and every check-in</li>
+  <li>One pipeline per service</li>
+</ul>
 
-<p>Immutable Server
+<p><strong>Artifacts</strong></p>
+<ul>
+  <li>jars, wars or rpm, NuGet, chocolaty</li>
+  <li>What about multiple OS’s - Custom VM images</li>
+  <li>Netflicks bake their services as AWS images (AMI’s Amazon machine images)</li>
+</ul>
+
+<p><strong>Immutable Server</strong>
 To avoid configuration drift, you need the pipeline to build an entire machine.</p>
 
-<p>Service Configuration
+<p><strong>Service Configuration</strong>
 Avoid building and artifact per environment (how can you really validate, plus need to store secure ids etc.), use settings file or configuration system.</p>
 
-<p>Mapping Services to machines(Hosts)
+<p><strong>Mapping Services to machines(Hosts)</strong>
 Think of hosts as an OS where a service can be deployed - physical hardware can support 1..N hosts</p>
 
 <p>N Services per host is simple but has issues (performance of one affects others, different dependencies, risk, ripple affect, may results in centralized team to manage host, limits deployment options)</p>
@@ -130,10 +138,10 @@ Note that single service per host can be quite expensive an extreme would be whe
 
 <p>Platform as a Service PaaS - takes an artifact like a war file or gem and provisions and runs them.</p>
 
-<p>Automation
+<p><strong>Automation</strong>
 A must if you go down a Service per Host route</p>
 
-<p>Appendix - Artifacts
+<p><strong>Appendix - Artifacts</strong>
 You add web components to a J2EE application in a package called a web application archive (WAR), which is a JAR similar to the package used for Java class libraries. A WAR usually contains other resources besides web components, including:</p>
 
 <p>Server-side utility classes (database beans, shopping carts, and so on).
@@ -165,8 +173,6 @@ A WAR has a specific hierarchical directory structure. The top-level directory o
               John Unwin&#39;s ramblings
             
             </li>
-            
-            <li><a href="mailto:your-email@domain.com">your-email@domain.com</a></li>
             
         </ul>
       </div>

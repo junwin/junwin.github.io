@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>testing notes</title>
-  <meta name="description" content="In his book Succeeding with Agile Mike Cohn outlines the Test Pyramid">
+  <meta name="description" content="Some notes on testing - work in progress…">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="https://junwin.github.io//jekyll/update/2017/01/25/testing.html">
@@ -66,31 +66,35 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>In his book Succeeding with Agile Mike Cohn outlines the Test Pyramid</p>
+    <p>Some notes on testing - <strong>work in progress…</strong></p>
 
-<p>Unit tests
-Service tests
-End-to-end tests</p>
+<p>In his book Succeeding with Agile Mike Cohn outlines the Test Pyramid</p>
+
+<ul>
+  <li>Unit tests</li>
+  <li>Service tests</li>
+  <li>End-to-end tests</li>
+</ul>
 
 <p>Beware of snow cones, Cohn’s pyramid inverted where there are more End-to-end and Service tests than unit tests - characterized as by very slow test runs and slow feedback.</p>
 
-<p>End-to-end testing can be tricky e.g. What versions of the different combined  services do we want to use (current prod or new release candidates), also duplication of tests that each individual service would run.
+<p>End-to-end testing can be tricky e.g. What versions of the different combined services do we want to use (current prod or new release candidates), also duplication of tests that each individual service would run.
 Could have all the individual services “fan in” to a general end-to-end testing, downsides can be flaky and brittle tests, these can fail for a variety of resons that are not related to the services, and can precipitate “normalization of deviance” - Diane Vaughan. Need to remove or fix flaky tests!</p>
 
 <p>Version Numbers - avoid inadvertently having a single version number for N services “Now you have 2.1.0 problems” Brandon Bryars - this results in loosing a key advantage of being able to deploy single services</p>
 
-<p>Consumer Driven Tests - these can help reduce the issues in E2E testing by defining consumer driven contracts, these reflect how different consumers of the service use the service, they are at about the same level in the pyramid as service tests.
+<p><strong>Consumer Driven Tests</strong> - these can help reduce the issues in E2E testing by defining consumer driven contracts, these reflect how different consumers of the service use the service, they are at about the same level in the pyramid as service tests.
 E2E tests can be like training wheels precursor to better CDTs</p>
 
-<p>You cant reduce bugs in prod to 0, and there are diminishing returns</p>
+<p>You can not reduce bugs in prod to 0, and there are diminishing returns</p>
 
-<p>Blue/Green testing - 2 versions deployed to Prod, ability to switch requests to one, but rapid fall back to the other.</p>
+<p><strong>Blue/Green testing</strong> - 2 versions deployed to Prod, ability to switch requests to one, but rapid fall back to the other.</p>
 
-<p>Canary testing -does it work as expected, e.g. Netflicks recommender systems validate the number of sales does not drop. Can either divert real production request to the service or replicate some requests to compare results Vs. current prod.</p>
+<p><strong>Canary testing</strong> -does it work as expected, e.g. Netflicks recommender systems validate the number of sales does not drop. Can either divert real production request to the service or replicate some requests to compare results Vs. current prod.</p>
 
 <p>Mean time between failures Vs. Mean time to repair</p>
 
-<p>Cross-functional testing - covers effects/behaviors that cannot be implemented like a normal feature - often affected by cross cutting concerns when developing a service e.g. latency, number of supported users, security, way the UI works</p>
+<p><strong>Cross-functional testing</strong> - covers effects/behaviors that cannot be implemented like a normal feature - often affected by cross cutting concerns when developing a service e.g. latency, number of supported users, security, way the UI works</p>
 
 <p>Performance tests</p>
 

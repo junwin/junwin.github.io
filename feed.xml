@@ -1,36 +1,191 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://junwin.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://junwin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://junwin.github.io//" rel="alternate" type="text/html" /><updated>2017-01-24T23:45:24-06:00</updated><id>https://junwin.github.io///</id><title type="html">John Unwin’s ramblings</title><subtitle>Some ramblings about different topics
-</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://junwin.github.io//jekyll/update/2017/01/24/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-01-24T15:45:18-06:00</published><updated>2017-01-24T15:45:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/24/welcome-to-jekyll</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/24/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://junwin.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://junwin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://junwin.github.io//" rel="alternate" type="text/html" /><updated>2017-01-27T17:43:59-06:00</updated><id>https://junwin.github.io///</id><title type="html">John Unwin’s ramblings</title><subtitle>Some ramblings about different topics
+</subtitle><entry><title type="html">Writing style - George Orwell</title><link href="https://junwin.github.io//jekyll/update/2017/01/27/writing-style.html" rel="alternate" type="text/html" title="Writing style - George Orwell" /><published>2017-01-27T08:05:18-06:00</published><updated>2017-01-27T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/27/writing-style</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/27/writing-style.html">&lt;p&gt;George Orwell wrote some simple rules in Politics and the English Language&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Never use a metaphor, simile, or other figure of speech which you are used to
+seeing in print.&lt;/li&gt;
+  &lt;li&gt;Never use a long word where a short one will do.&lt;/li&gt;
+  &lt;li&gt;If it is possible to cut a word out, always cut it out.&lt;/li&gt;
+  &lt;li&gt;Never use the passive where you can use the active.&lt;/li&gt;
+  &lt;li&gt;Never use a foreign phrase, a scientific word, or a jargon word if you can think of
+an everyday English equivalent.&lt;/li&gt;
+  &lt;li&gt;Break any of these rules sooner than say anything outright barbarous.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;These rules sound elementary, and so they are, but they demand a deep change of
+attitude in anyone who has grown used to writing in the style now fashionable.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;My new years resolution is to try an apply them.&lt;/p&gt;</content><summary type="html">George Orwell wrote some simple rules in Politics and the English Language</summary></entry><entry><title type="html">A quick introduction to story mapping</title><link href="https://junwin.github.io//jekyll/update/2017/01/27/storymapping.html" rel="alternate" type="text/html" title="A quick introduction to story mapping" /><published>2017-01-27T08:05:18-06:00</published><updated>2017-01-27T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/27/storymapping</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/27/storymapping.html">&lt;p&gt;&lt;strong&gt;A serious issue with agile is the lack of the “big picture.”&lt;/strong&gt;
+Agile breaks larger requirements into smaller chunks or “stories.” These stories are quick to develop and enable users to get a rapid view of progress as the stories are completed in a series of short sprints.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Continous Delivery</title><link href="https://junwin.github.io//jekyll/update/2017/01/24/continuous-delivery.html" rel="alternate" type="text/html" title="Continous Delivery" /><published>2017-01-24T15:45:18-06:00</published><updated>2017-01-24T15:45:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/24/continuous-delivery</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/24/continuous-delivery.html">&lt;p&gt;Continuous Integration
+&lt;p&gt;One possible downside to agile is that, when looking at a list of many stories in different backlogs, it is easy to lose the big picture of what the system should do. An analogy would trying to see a tree by only looking at the tree’s leaves. All too often, many small stories developed over a period of time do not come together as a coherent system.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A house of many colors&lt;/strong&gt;
+Losing sight of the big picture is like having each room in a house painted by decorators who did not have clear direction about who lived in the house and the outcomes they need. If the decorators miss the big picture of what the family needs – for example, a kid-friendly, low-maintenance décor – the house owners would get a new paint job, but the results are unlikely to please, since the colors might not meet with expectations. Worse, if the finish is not low maintenance or easy to clean, it is not even fit for purpose and not likely to last long in a family environment.&lt;/p&gt;
+
+&lt;p&gt;Too many systems are developed in this way, where there is no shared understanding of the big picture in terms of business outcomes and how users will use the finished system. At best, these systems have mediocre benefits and, at worse, a negative effect on the business and users who refuse to use the system.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The change of focus from the business and users to documents&lt;/strong&gt;
+ Another common problem with agile methods is that stories are treated as one-way communications between business analysts and programmers.
+To paraphrase Martin Fowler, this is a serious mistake; stories are intended to spark a conversation between the business and developers. A central tenet of agile is collaboration between business and developers – this concentrates the developers’ ability to get the best out of software tools and the in-depth knowledge of what the business needs.One-way communication compounds the problem of the team not seeing the big picture. Even if the product manager and BAs are on the same page as the business users, the lack communication with the rest of the team will make the project unlikely to succeed in terms of business impact.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Where stories are just requirements documents by a different name&lt;/strong&gt;
+In many organizations stories are used simply as a stand-in for the traditional requirements document, and usually the development process resembles the old waterfall methods with all its associated problems.The result is a lack of common understanding between stakeholders and all the parties responsible for producing the software, resulting in software that is over budget and has a disjointed set of features that pleases no one and provides little or negative business impacts.&lt;/p&gt;
+
+&lt;p&gt;“The days of product managers gathering up and documenting requirements, designers scrambling just to put some lipstick on the product, and engineers sheltered in the basement coding are long gone for the best teams – and it’s time they were gone in your team, too.” – Marty Cagan
+Getting to a better place: change your mindset. The most important point is to shift your mindset from the idea of building more software faster, to maximizing the outcomes and impact of what you build. Too many organizations focus on team velocity, stories completed and releases made. That only adds up to going in the wrong direction faster.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Work with your users&lt;/strong&gt;
+To do this, you need to identify useful outcomes for the business – things that will have a positive impact. Wherever possible, try to work with the people who will actually be using the system. Failure to clearly identify business outcomes means that you cannot identify the value for stories or understand stories that belong together to satisfy some outcome. If you do not know the value of stories or their relationships, you cannot effectively plan a release or manage scope when deadlines are tight.&lt;/p&gt;
+
+&lt;p&gt;To gain a deep understanding of the business, you have to collaborate with the people in your business. You need to develop a model that represents how things are now (this can be extended to the later/target model). Your objective is to understand what tasks people perform to achieve the desired outcome, in terms of what happens and when things are done for a specific business outcome.&lt;/p&gt;
+
+&lt;p&gt;By working with different business users, alternatives can be identified as well as what happens when things go wrong.
+When holding these discussions, take notes and take pictures, these resources help act as a “anchor” to help people recall the whole discussion.&lt;/p&gt;
+
+&lt;p&gt;Present information in an accessible way – it is about shared understanding
+Story maps are a great way of bringing all the information together in a way that everyone can understand and participate in. It is easy to see who is involved, what happens now, where pain points are and what improvements can be made.&lt;/p&gt;
+
+&lt;p&gt;Story maps provide clear links to users and business outcomes. They keep focus on the business needs and impact, so it is possible to separate what needs to be done to satisfy some specific outcome, or the outcomes needed to enable a certain group of users. The result is a better collaboration and ultimately, a better product. They enable the team to minimize output while maximizing outcomes and impact.&lt;/p&gt;
+
+&lt;p&gt;To make a story map you would write a short verb phrase on a post-it note for each of the activities and tasks you identify when collaborating with the business. These post-its can be put on a white board as a narrative, flowing from left to right. It should be easy to point to the board and see and talk about the sequence of tasks.&lt;/p&gt;
+
+&lt;p&gt;If you work with a group, different people will achieve their tasks in different ways. Plus you can identify what happens when things do not go according to plan. These alternatives, actions and tasks can be grouped together, one below the other.&lt;/p&gt;
+
+&lt;p&gt;Avoid using a system at this point – your mission is collaboration. It has to be easy to move tasks around, regroup things as a group of people. You can easily record different stages using your smartphone.&lt;/p&gt;
+
+&lt;p&gt;If you look at the tasks, some will naturally belong together to form some larger task. This larger task is called an “activity” (also defined by a simple verb phrase).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://junwin.github.io//assets/gotoworkstorymap.png&quot; alt=&quot;gotowork storymap1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In summary, you can think of story map as a grid. Along the top of the grid, flowing from left to right, are activities. For each activity there will be one or more tasks that people do to complete the activity. Each task is defined by a short verb phrase. The depth of the map contains the variations and alternative tasks for some activity. Tasks are arranged from left to right in a narrative flow.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Slice out releases&lt;/strong&gt;
+You need to accept that you can never do it all, so focus on some specific outcomes to prioritize what is done in terms of impact to the business. Alternatively, choose a particular user (or group) that needs to be satisfied first. If you cannot identify specific outcomes then you cannot prioritize.&lt;/p&gt;
+
+&lt;p&gt;Story maps are good tools for separating tasks to satisfy some outcomes from the full set of tasks. You can slice the map into sections or rows below the map to capture the tasks needed to reach a specific outcome or group of users. There are different ways you can slice the project: you could incrementally add function in a series of releases (see above), pick certain activities and outcomes, or select a group of activities for some specific users. In our example the most minimum case happens when someone oversleeps.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://junwin.github.io//assets/oversleepstorymap.png&quot; alt=&quot;oversleep story map&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Because all the tasks are still present, you keep the view of the big picture, but can focus on what is needed for some business outcome.
+In our example, the minimal tasks for getting to work are shown as what happens when the alarm does not work and I’ve overslept.&lt;/p&gt;
+
+&lt;p&gt;If you break things up by releases, consider that the minimum viable solution (MVS) is the smallest solution release that successfully achieves its outcomes for a user or group of users.&lt;/p&gt;
+
+&lt;p&gt;That said, it is very hard to make a single release that will satisfy the business’s outcomes in the first attempt. So another use for MVS is as a learning tool to discover what really would be a minimal release by presenting the MVS and gaging reactions from a small set of your users as part of a process to get to the real product – see Eric Ries book The lean startup.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What’s the story – stories are about collaboration and sharing knowledge&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When using story mapping, the activities and work items in the vertical slices correspond to the stories in Scrum.
+Stories are not intended to be a written form of requirements – they are discussions and records of collaboration about solving problems with the emphasis on collaboration. Good stories provide a shared understanding of who uses the system, what they need to do and how the story satisfies business outcomes that create positive impact.
+They should be augmented with pictures, notes and text to anchor ideas in the participants heads to underscore their role as tools to communicate.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What’s next?&lt;/strong&gt;
+ If you have made the shift to increased collaboration and to using tools like story mapping to focus on business outcomes and share knowledge throughout the team, you have set the stage for great delivery and business impact.
+Story mapping as a technique is kept simple and accessible to all the stakeholders in a given venture.
+To execute and deliver based on a clear view of what the business really needs, you still need to lever the innovation and skill that the engineering team brings. Story mapping does not help your team develop faster or use better internal engineering practices; rather, it ensures that what they develop is actually useful.&lt;/p&gt;
+
+&lt;p&gt;That said, you should access some great resources to understand the best ways to translate the collaborative work depicted in story mapping into your development process.If you have read this far, then it’s a must to read  User Story Mapping: Discover the Whole Story, Build the Right Product   by  Jeff Fuller, which covers all the topics from creating story maps to how we get them executed.&lt;/p&gt;</content><summary type="html">A serious issue with agile is the lack of the “big picture.”
+Agile breaks larger requirements into smaller chunks or “stories.” These stories are quick to develop and enable users to get a rapid view of progress as the stories are completed in a series of short sprints.</summary></entry><entry><title type="html">testing notes</title><link href="https://junwin.github.io//jekyll/update/2017/01/25/testing.html" rel="alternate" type="text/html" title="testing notes" /><published>2017-01-25T08:05:18-06:00</published><updated>2017-01-25T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/25/testing</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/25/testing.html">&lt;p&gt;Some notes on testing - &lt;strong&gt;work in progress…&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In his book Succeeding with Agile Mike Cohn outlines the Test Pyramid&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unit tests&lt;/li&gt;
+  &lt;li&gt;Service tests&lt;/li&gt;
+  &lt;li&gt;End-to-end tests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Beware of snow cones, Cohn’s pyramid inverted where there are more End-to-end and Service tests than unit tests - characterized as by very slow test runs and slow feedback.&lt;/p&gt;
+
+&lt;p&gt;End-to-end testing can be tricky e.g. What versions of the different combined services do we want to use (current prod or new release candidates), also duplication of tests that each individual service would run.
+Could have all the individual services “fan in” to a general end-to-end testing, downsides can be flaky and brittle tests, these can fail for a variety of resons that are not related to the services, and can precipitate “normalization of deviance” - Diane Vaughan. Need to remove or fix flaky tests!&lt;/p&gt;
+
+&lt;p&gt;Version Numbers - avoid inadvertently having a single version number for N services “Now you have 2.1.0 problems” Brandon Bryars - this results in loosing a key advantage of being able to deploy single services&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Consumer Driven Tests&lt;/strong&gt; - these can help reduce the issues in E2E testing by defining consumer driven contracts, these reflect how different consumers of the service use the service, they are at about the same level in the pyramid as service tests.
+E2E tests can be like training wheels precursor to better CDTs&lt;/p&gt;
+
+&lt;p&gt;You can not reduce bugs in prod to 0, and there are diminishing returns&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Blue/Green testing&lt;/strong&gt; - 2 versions deployed to Prod, ability to switch requests to one, but rapid fall back to the other.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Canary testing&lt;/strong&gt; -does it work as expected, e.g. Netflicks recommender systems validate the number of sales does not drop. Can either divert real production request to the service or replicate some requests to compare results Vs. current prod.&lt;/p&gt;
+
+&lt;p&gt;Mean time between failures Vs. Mean time to repair&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cross-functional testing&lt;/strong&gt; - covers effects/behaviors that cannot be implemented like a normal feature - often affected by cross cutting concerns when developing a service e.g. latency, number of supported users, security, way the UI works&lt;/p&gt;
+
+&lt;p&gt;Performance tests&lt;/p&gt;</content><summary type="html">Some notes on testing - work in progress…</summary></entry><entry><title type="html">SOA, ESB and event driven architectures -  oh my!!</title><link href="https://junwin.github.io//jekyll/update/2017/01/25/designDecisions.html" rel="alternate" type="text/html" title="SOA, ESB and event driven architectures -  oh my!!" /><published>2017-01-25T08:05:18-06:00</published><updated>2017-01-25T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/25/designDecisions</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/25/designDecisions.html">&lt;p&gt;1)  Service Orientated Architecture (SOA)
+SOA is an architectural concept where different services can be discovered and their interfaces are developed so that different systems can use them irrespective of the development platform. Its key goal is to facilitate reuse of common services with an organization or some wider ecosystem. The main features are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Services are can be used without consideration of how they were developed or where they are deployed.&lt;/li&gt;
+  &lt;li&gt;The employ a request response model, where communication is initiated by the client/consumer, and results are synchronously returned from the service.&lt;/li&gt;
+  &lt;li&gt;Only one client/consumer can use the service at a time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A draw back to the SOA model is that it is centralized and additional methods are needed to provide failover and scaling.
+Clients are coupled to the service by consuming its interface, thus changes to the service can impact the client.&lt;/p&gt;
+
+&lt;p&gt;2) Enterprise Service Bus bases architecture (ESB)
+An ESB usually has a centralized bus that is used to route messages to different components. The ESB provides additional features to facilitate translating and converting the format of the requests and responses that concern them as well as filtering and content-based routing capabilities. Despite the features provided by an ESB, the essential architecture is still point to point SOA and has the same problems with coupling and centralization.&lt;/p&gt;
+
+&lt;p&gt;3) Event Driven Architecture (EDA)
+An Event Driven Architecture(EDA) uses messaging fabric to connect a set of applications. It does not use a point to point design, any given application can usually see all the events raised by other applications. The EDA provides the equivalent filtering, transforming and routing capabilities as an ESB. However, the EDA puts emphasis on decoupling and decentralization. An EDA generally uses a canonical model to decouple different components, in trading applications this is often based on FIX protocol.&lt;/p&gt;
+
+&lt;p&gt;4) Staged Event Driven Architecture (SEDA)
+A staged event driven architecture (SEDA)  decomposes a complex system into a series of stages connected by queues. SEDA is a variant of an EDA that explicitly exposes a pipe-line of operations, the main benefits are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It can produce a highly scalable solution, with no centralized points of failure.&lt;/li&gt;
+  &lt;li&gt;It simplifies the rollout of additional components, and eases the on-going maintenance overheads.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is suited to circumstances where actions depend on some event, for example, when some data becomes available (an event) a pipe line of actions are performed. In most cases these events are modeled as messages that can be sent to one or more components (stages).
+Events flow from producers to components that consume (and may produce) along a predefined sequence with no use of a central routing service.&lt;/p&gt;</content><summary type="html">1)  Service Orientated Architecture (SOA)
+SOA is an architectural concept where different services can be discovered and their interfaces are developed so that different systems can use them irrespective of the development platform. Its key goal is to facilitate reuse of common services with an organization or some wider ecosystem. The main features are:
+
+  Services are can be used without consideration of how they were developed or where they are deployed.
+  The employ a request response model, where communication is initiated by the client/consumer, and results are synchronously returned from the service.
+  Only one client/consumer can use the service at a time.</summary></entry><entry><title type="html">Pets, Cattle and the Chaos Monkey – why your pets need to stay away from the datacenter</title><link href="https://junwin.github.io//jekyll/update/2017/01/25/pets-cattle.html" rel="alternate" type="text/html" title="Pets, Cattle and the Chaos Monkey – why your pets need to stay away from the datacenter" /><published>2017-01-25T08:05:18-06:00</published><updated>2017-01-25T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/25/pets-cattle</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/25/pets-cattle.html">&lt;p&gt;&lt;img src=&quot;https://junwin.github.io//assets/cows.png&quot; alt=&quot;cows in a field&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pets, Cattle and the Chaos Monkey – why your pets need to stay away from the datacenter&lt;/p&gt;
+
+&lt;p&gt;Take any of your useful software and systems and think about the hardware and IT infrastructure used to run them.First, ask yourself if you know any servers by name, if there are special groups that have specific software components (database servers, middle tier servers/app servers, message brokers etc.) or other special hardware needs.&lt;/p&gt;
+
+&lt;p&gt;Second, ask yourself if any one of these has some issue; do you need it repaired?
+If you answer yes to either, then you have found your pets, you know them by name, look after their needs and if they are sick you take them to the vet.
+On the other hand, some of the hardware has no name, it is generic – if it fails or dies, you just replace it with more generic boxes; these are the cattle. You really don’t care if they go wrong, and if you have demand, you simply increase the herd with more nameless members.
+Modern architecture (public or private clouds) demands cattle; it does not want to care about an individual server’s reliability. If a machine fails or becomes overloaded, another generic server can be added to the farm. It is thanks to the cattle machines that you get resilience and the ability to scale on demand.&lt;/p&gt;
+
+&lt;p&gt;That said, you need to work with your system and software so they work well with cattle, with no hidden pets that demand special attention, this can be a tough challenge, and that’s where the Chaos Monkey comes in.&lt;/p&gt;
+
+&lt;p&gt;Despite its name, the Chaos Monkey is your friend. You turn him lose in your test environments and he constantly jumps around randomly switching machines off in a most ungraceful – but necessary – way.
+If you only have cattle in the data center, then all is well. Other boxes simply come on stream to replace the ones that the monkey has stopped. But, he is also designed to sniff out any hidden pets. If the Chaos Monkey switches off a pet, the system goes down until the pet can get its special attention. This way you know you have problems – give that monkey a banana, for he has done his job well.&lt;/p&gt;
+
+&lt;p&gt;So the moral of our story, if you want to scale and have high resilience find your pets and take them home, love your cattle and get the Chaos Monkey to make sure all is well.&lt;/p&gt;</content><summary type="html"></summary></entry><entry><title type="html">Continuous Delivery</title><link href="https://junwin.github.io//jekyll/update/2017/01/24/continuous-delivery.html" rel="alternate" type="text/html" title="Continuous Delivery" /><published>2017-01-24T15:45:18-06:00</published><updated>2017-01-24T15:45:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/24/continuous-delivery</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/24/continuous-delivery.html">&lt;p&gt;Continuous Integration
 Continuous Delivery&lt;/p&gt;
 
-&lt;p&gt;Continuous Integration(CI)
-Enable you to make changes quickly and easily
-Auto Detect code committed
-Build
-Run Unit Tests
-Deploy Service
-Run Service tests&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Continuous Integration(CI)&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Jez Humble - 3 questions
-Do you check into the mainline each day?
-This includes integrating short lived branches to the main.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Enable you to make changes quickly and easily&lt;/li&gt;
+  &lt;li&gt;Auto Detect code committed&lt;/li&gt;
+  &lt;li&gt;Build&lt;/li&gt;
+  &lt;li&gt;Run Unit Tests&lt;/li&gt;
+  &lt;li&gt;Deploy Service&lt;/li&gt;
+  &lt;li&gt;Run Service tests&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Do you have a suite of tests to validate your changes?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Jez Humble - 3 questions&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;When the build is broken is it the #1 team priority to fix it?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Do you check into the mainline each day? This includes integrating short lived branches to the main.&lt;/li&gt;
+  &lt;li&gt;Do you have a suite of tests to validate your changes?&lt;/li&gt;
+  &lt;li&gt;When the build is broken is it the #1 team priority to fix it?&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Options&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Options&lt;/strong&gt;&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;Global Build for all services (clumsy when there are numerous service, plus how do you know what to deploy)&lt;/li&gt;
   &lt;li&gt;Single Source tree N builds (at a folder level) - can encourage coupling by checking in changes for N services once&lt;/li&gt;
@@ -42,28 +197,32 @@ This includes integrating short lived branches to the main.&lt;/p&gt;
   &lt;li&gt;Avoid lock-step releases&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Exceptions
+&lt;p&gt;&lt;strong&gt;Exceptions&lt;/strong&gt;
 At the start may well be better to go for option 1 while the service boundaries are in some flux, then move them to 3 as API’s stabilize&lt;/p&gt;
 
-&lt;p&gt;Continuous Delivery
-Build Pipelines and continuous delivery(compile and unit tests, Slow Tests, deploy UAT, performance tests, deploy to prod)
-Model the standard release process
-Aim is to get quick feedback on the production readiness of each and every check-in
-One pipeline per service&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Continuous Delivery&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Artifacts
-jars, wars or rpm, NuGet, chocolaty
-What about multiple OS’s
-Custom VM images
-Netflicks bake their services as AWS images (AMI’s Amazon machine images)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Build Pipelines and continuous delivery(compile and unit tests, Slow Tests, deploy UAT, performance tests, deploy to prod)&lt;/li&gt;
+  &lt;li&gt;Model the standard release process&lt;/li&gt;
+  &lt;li&gt;Aim is to get quick feedback on the production readiness of each and every check-in&lt;/li&gt;
+  &lt;li&gt;One pipeline per service&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Immutable Server
+&lt;p&gt;&lt;strong&gt;Artifacts&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;jars, wars or rpm, NuGet, chocolaty&lt;/li&gt;
+  &lt;li&gt;What about multiple OS’s - Custom VM images&lt;/li&gt;
+  &lt;li&gt;Netflicks bake their services as AWS images (AMI’s Amazon machine images)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Immutable Server&lt;/strong&gt;
 To avoid configuration drift, you need the pipeline to build an entire machine.&lt;/p&gt;
 
-&lt;p&gt;Service Configuration
+&lt;p&gt;&lt;strong&gt;Service Configuration&lt;/strong&gt;
 Avoid building and artifact per environment (how can you really validate, plus need to store secure ids etc.), use settings file or configuration system.&lt;/p&gt;
 
-&lt;p&gt;Mapping Services to machines(Hosts)
+&lt;p&gt;&lt;strong&gt;Mapping Services to machines(Hosts)&lt;/strong&gt;
 Think of hosts as an OS where a service can be deployed - physical hardware can support 1..N hosts&lt;/p&gt;
 
 &lt;p&gt;N Services per host is simple but has issues (performance of one affects others, different dependencies, risk, ripple affect, may results in centralized team to manage host, limits deployment options)&lt;/p&gt;
@@ -75,10 +234,10 @@ Note that single service per host can be quite expensive an extreme would be whe
 
 &lt;p&gt;Platform as a Service PaaS - takes an artifact like a war file or gem and provisions and runs them.&lt;/p&gt;
 
-&lt;p&gt;Automation
+&lt;p&gt;&lt;strong&gt;Automation&lt;/strong&gt;
 A must if you go down a Service per Host route&lt;/p&gt;
 
-&lt;p&gt;Appendix - Artifacts
+&lt;p&gt;&lt;strong&gt;Appendix - Artifacts&lt;/strong&gt;
 You add web components to a J2EE application in a package called a web application archive (WAR), which is a JAR similar to the package used for Java class libraries. A WAR usually contains other resources besides web components, including:&lt;/p&gt;
 
 &lt;p&gt;Server-side utility classes (database beans, shopping carts, and so on).
@@ -87,4 +246,87 @@ Client-side classes (applets and utility classes)
 A WAR has a specific hierarchical directory structure. The top-level directory of a WAR is the document root of the application. The document root is where JSP pages, client-side classes and archives, and static web resources are stored.&lt;/p&gt;
 
 &lt;p&gt;So a .war is a .jar, but it contains web application components and is laid out according to a specific structure. A .war is designed to be deployed to a web application server such as Tomcat or Jetty or a Java EE server such as JBoss or Glassfish.&lt;/p&gt;</content><summary type="html">Continuous Integration
-Continuous Delivery</summary></entry></feed>
+Continuous Delivery</summary></entry><entry><title type="html">A quick introduction to scrum</title><link href="https://junwin.github.io//jekyll/update/2017/01/01/quickintro-scrum.html" rel="alternate" type="text/html" title="A quick introduction to scrum" /><published>2017-01-01T08:05:18-06:00</published><updated>2017-01-01T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/01/quickintro-scrum</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/01/quickintro-scrum.html">&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;
+This is a quick introduction to scrum&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is Scrum?&lt;/strong&gt;
+Scrum is a framework to help small teams of around seven people develop complex products. Scrum can also be used for non-software projects. The work in scrum is done in short work cycles – for example, two weeks – called sprints. A key part of scrum is for the team to regularly inspect and adapt.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Artifacts&lt;/strong&gt;
+The main artifacts of scrum are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Features – features are the key things a product must support or do to make it fit for purpose. One or more features are packaged and delivered as a product release so that the product is delivered over a set of releases.&lt;/li&gt;
+  &lt;li&gt;Stories – Each feature will have one or more stories, each describing a piece of work needed to deliver the feature. All stories are put into a list called the Product Backlog. Each sprint is comprised of stories selected by the product owner. The Sprint Backlog is a list of the stories to be executed in a sprint.There are many other artifacts such as burn charts, test plans, test evidence, design notes – the scrum team uses these as required.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Key roles in Scrum&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There are three main roles in scrum the Product Owner, Scrum Master and Team members.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Product Owner
+The product is an empowered business leader who directs the team to the work that produces highest ROI.  Their key responsibilities are to control what goes in the product backlog, set priorities and be the definitive source of information about what the product needs to do. They typically determine the acceptance criteria, and agree that completed work meets the criteria. Note that the absence of day to day involvement by a product owner from the business is the harbinger of badly run scrum/agile processes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Scrum Master
+The scrum master is not in charge of the team; they bring expertise in scrum, facilitate and coach the scrum process, and remove obstacles and impediments that block progress.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Team Members
+Team members may have different areas of expertise and form part of a self-organizing unit. They own the technical decisions, determine the task for each story, are committed to estimates and the sprint timeline and identify and use best practices and tools.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Product Backlog&lt;/strong&gt;
+The product backlog is a list of all the stories needed for the product. These stories can be in different states of definition; some may just have the title, others may be fully defined in terms of acceptance criteria and tasks. A regular meeting of the team and product owner – called grooming – is used to identify stories and get all the details in place so that they are “sprint ready”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sprint Backlog&lt;/strong&gt;
+The sprint backlog is the list of stories and defects to be executed in a sprint. Stories must be complete and sprint ready before adding them to the sprint backlog. Once the backlog is agreed for a sprint it should not be changed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Story&lt;/strong&gt;
+At the heart of scrum are stories. Stories describe work that is needed to implement a feature, each story identifies who uses the function, what they are trying to do and crucially how it adds value to the business. A story needs to have clear acceptance criteria agreed with the product owner so that everyone knows when the story is done. Tools such as specification by example (SBE) may be used to provide concrete acceptance criteria. Stories have a size determined by the team, the method for sizing varies but often might be tee shirt sizes (S M L XL) or ideal days (1, 2, 3, 5, 8). Some teams will limit the size of a single story say to 5 ideal days. A story will have the tasks, test plans and any design or technical notes added by the team.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sprint Planning&lt;/strong&gt;
+A sprint planning meeting is held with the team and the product owner to determine what stories will be executed in the next sprint based on the priorities laid down by the product owner.  Part of the planning is assess how much work capacity the team has during the sprint in terms of story points, to ensure that the number of stories will not exceed the teams capacity.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Daily Scrum&lt;/strong&gt;
+The daily scrum (or standup) meeting is held each day at the same time, the meeting should be short 15 minutes for an average team. It is focused on each team member saying what tasks they have completed, what tasks they expect to complete in the next day, and if there are any issues or impediments preventing them for working.
+It is normal that people have ideas, ask for help or technical guidance during the standup, these are encouraged. However, they should take place between the relevant people after the daily scrum and not during the scrum.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sprint Review&lt;/strong&gt;
+The sprint review is a meeting with the product owner (and business stakeholders) to demonstrate and accept completion of the sprint’s stories, identify what was not completed, and to get feedback so that any changes are handled sooner rather than later. A typical sprint review would take about an hour.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Retrospective&lt;/strong&gt;
+The purpose of the retrospective meeting is to improve the process by identifying what went well and where improvement is needed. A goal might be to identify 1-2 process improvements that can be adopted in the next sprint.&lt;/p&gt;
+
+&lt;p&gt;If you found this useful take a look at: &lt;a href=&quot;https://www.amazon.com/dp/B007P5N8D4/ref=dp-kindle-redirect?_encoding=UTF8&amp;amp;btkr=1&quot;&gt;Scrum: a Breathtakingly Brief and Agile Introduction&lt;/a&gt;&lt;/p&gt;</content><summary type="html">Introduction
+This is a quick introduction to scrum</summary></entry><entry><title type="html">Why the cloud matters to your development team</title><link href="https://junwin.github.io//jekyll/update/2015/09/15/whycloud-metters.html" rel="alternate" type="text/html" title="Why the cloud matters to your development team" /><published>2015-09-15T09:05:18-05:00</published><updated>2015-09-15T09:05:18-05:00</updated><id>https://junwin.github.io//jekyll/update/2015/09/15/whycloud-metters</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2015/09/15/whycloud-metters.html">&lt;p&gt;I was reading an interview about cloud based platforms with Adrian Cockroft written by Stefan Tikov in September edition of IEEE Computing Edge. What really struck a chord was when Cockroft says “The biggest change is when someone working at a company thinks, I need some machines to do something”&lt;/p&gt;
+
+&lt;p&gt;The problem is that in companies with older operating models, to even get a single machine is a long and expensive process submitting tickets, arguing your case for the type and size of hardware with IT and procurement before finally some hardware arrives. In many larger companies the process takes months. Generally even then there is little control or access to configure things for optimum performance.&lt;/p&gt;
+
+&lt;p&gt;The situation is radically different in companies that use public or private clouds – where the main thing about cloud computing is that it is self-service.  It gives developers and engineers the opportunity to try things out for real. It is possible to spin up different machines and multiple database servers even across geographic locations, in minutes, use them for some hours, tweak configurations to validate some ideas or architecture, rapidly expose new software to sets of users and then dispose of the cloud hardware.&lt;/p&gt;
+
+&lt;p&gt;The benefits for teams that use cloud technology are that they can validate a concepts, set up multiple test environments in days not months, validate new architectures, and can focus on engineering and not paperwork.&lt;/p&gt;
+
+&lt;p&gt;The impacts on the business are reduced timescales (accompanied by improved scalability and resilience), reduced risks and increased agility to meet the ever changing demands from their customers.&lt;/p&gt;
+
+&lt;p&gt;So for the sake of your developers, if not the bottom line - it is time to implement the cloud.&lt;/p&gt;
+
+&lt;p&gt;Tagged in:private cloudscloud computingagile application development&lt;/p&gt;</content><summary type="html">I was reading an interview about cloud based platforms with Adrian Cockroft written by Stefan Tikov in September edition of IEEE Computing Edge. What really struck a chord was when Cockroft says “The biggest change is when someone working at a company thinks, I need some machines to do something”</summary></entry><entry><title type="html">Thinking of scaling your scrum team? Think again.</title><link href="https://junwin.github.io//jekyll/update/2015/09/11/thinking-ofscaling-scrum.html" rel="alternate" type="text/html" title="Thinking of scaling your scrum team? Think again." /><published>2015-09-11T09:05:18-05:00</published><updated>2015-09-11T09:05:18-05:00</updated><id>https://junwin.github.io//jekyll/update/2015/09/11/thinking-ofscaling-scrum</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2015/09/11/thinking-ofscaling-scrum.html">&lt;p&gt;Some processes like waterfall, have independent isolated phases of development (requirements, design, build and test) that are separate and can be scaled by adding resources into the separate phases.&lt;/p&gt;
+
+&lt;p&gt;In contrast, scrum is “scale free.” It uses highly coordinated, cross function teams that grow like ecosystems do in a piecemeal and organic way. In such teams, adding people beyond a certain point will slow things down, mainly due to the greatly increased overhead of communication, synchronization and being assimilated by the team. An analogy would be trying to speed up the task of sorting a deck of cards by adding more people.&lt;/p&gt;
+
+&lt;p&gt;In a talk given by Jeff Sutherland at the UPscALE (Upscaled Agile in Medium &amp;amp; Large Enterprises) event he said “Scrum scales fractally rather than hierarchically. The true success of your scaling efforts doesn’t really depend on whether you can hire more people in your preexisting organizational structure. Instead, the real key to scaling is whether the values of Scrum(Focus, Openness, Respect, Courage, Commitment) have been truly adopted and internalized throughout the organization” – so essentially until work has been done to get the most from existing teams adding more people will simply enlarge the problem.&lt;/p&gt;
+
+&lt;p&gt;In Jim Coplien’s article in IEEE Computing, he also suggests it is much better to improve the existing the scrum team so they can do things in less time rather than adding more people. If you could get an order of magnitude performance improvement in your scrum team – why would you consider adding 10 times the people?&lt;/p&gt;
+
+&lt;p&gt;The idea is to concentrate on increasing business value with as few people as possible, in this way you “lean down” instead of “scale up”.This idea, to lean down, is counter intuitive to many organizations, which tend to add more people to existing teams. Frequently, the new roles add little value, exponentially increase the burden of communication, reduce performance and only serve to assuage the worry that competitors may somehow outperform them. Ironically, these same organizations frequently suffer from significant “developer friction” and practices that inhibit performance.&lt;/p&gt;
+
+&lt;p&gt;So when faced with the prospect of adding resources, or migrating a large resource pool of engineers to scrum, stop and think if this is the best option, consider that it is better to increase the velocity of existing teams rather than add more resources to the mix.&lt;/p&gt;</content><summary type="html">Some processes like waterfall, have independent isolated phases of development (requirements, design, build and test) that are separate and can be scaled by adding resources into the separate phases.</summary></entry><entry><title type="html">Need to create value quickly – then get rid of half of your features</title><link href="https://junwin.github.io//jekyll/update/2015/09/06/get-rid-of-features.html" rel="alternate" type="text/html" title="Need to create value quickly – then get rid of half of your features" /><published>2015-09-06T09:05:18-05:00</published><updated>2015-09-06T09:05:18-05:00</updated><id>https://junwin.github.io//jekyll/update/2015/09/06/get-rid-of-features</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2015/09/06/get-rid-of-features.html">&lt;p&gt;A recent industry evaluation found that the majority of features delivered in software releases produce little or no value to the end-users – 45% of features never being used, and 19% being rarely used, the remaining 36% being used in varying amounts.&lt;/p&gt;
+
+&lt;p&gt;This clearly suggests that a good way to increase the rate of delivered value is to take a ruthless look at all the parts of the backlog of the projects we work on with a view of stripping out 40 – 60% of the items. This is underscored by the first agile principle “Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.” where we must keep the emphasis on valuable.&lt;/p&gt;
+
+&lt;p&gt;A key flaw in many scrum projects it that stories do not clearly define value, either it is left out or framed in ambiguous terms, no wonder then that so many features are left unused. A simple first step might be to relegate any story without a clear and enumerated value to the end of the backlog.&lt;/p&gt;
+
+&lt;p&gt;References:
+1  What Next? Advances in Software Driven Industries Christof Ebert, Gerd Hoefner and Mani V.S.  IEEE Software, vol 32, no. 1, 2015&lt;/p&gt;</content><summary type="html">A recent industry evaluation found that the majority of features delivered in software releases produce little or no value to the end-users – 45% of features never being used, and 19% being rarely used, the remaining 36% being used in varying amounts.</summary></entry></feed>
