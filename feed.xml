@@ -1,19 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://junwin.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://junwin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://junwin.github.io//" rel="alternate" type="text/html" /><updated>2017-01-27T17:43:59-06:00</updated><id>https://junwin.github.io///</id><title type="html">John Unwin’s ramblings</title><subtitle>Some ramblings about different topics
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://junwin.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://junwin.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://junwin.github.io//" rel="alternate" type="text/html" /><updated>2017-01-31T11:27:20-06:00</updated><id>https://junwin.github.io///</id><title type="html">John Unwin’s ramblings</title><subtitle>Some ramblings about different topics
 </subtitle><entry><title type="html">Writing style - George Orwell</title><link href="https://junwin.github.io//jekyll/update/2017/01/27/writing-style.html" rel="alternate" type="text/html" title="Writing style - George Orwell" /><published>2017-01-27T08:05:18-06:00</published><updated>2017-01-27T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/27/writing-style</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/27/writing-style.html">&lt;p&gt;George Orwell wrote some simple rules in Politics and the English Language&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Never use a metaphor, simile, or other figure of speech which you are used to
-seeing in print.&lt;/li&gt;
+&lt;ul&gt;
+  &lt;li&gt;Never use a metaphor, simile, or other figure of speech which you are used to seeing in print.&lt;/li&gt;
   &lt;li&gt;Never use a long word where a short one will do.&lt;/li&gt;
   &lt;li&gt;If it is possible to cut a word out, always cut it out.&lt;/li&gt;
   &lt;li&gt;Never use the passive where you can use the active.&lt;/li&gt;
-  &lt;li&gt;Never use a foreign phrase, a scientific word, or a jargon word if you can think of
-an everyday English equivalent.&lt;/li&gt;
+  &lt;li&gt;Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent.&lt;/li&gt;
   &lt;li&gt;Break any of these rules sooner than say anything outright barbarous.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;These rules sound elementary, and so they are, but they demand a deep change of
-attitude in anyone who has grown used to writing in the style now fashionable.&lt;/p&gt;
+&lt;p&gt;These rules sound elementary, and so they are, but they demand a deep change of attitude in anyone who has grown used to writing in the style now fashionable.&lt;/p&gt;
 
 &lt;p&gt;My new years resolution is to try an apply them.&lt;/p&gt;</content><summary type="html">George Orwell wrote some simple rules in Politics and the English Language</summary></entry><entry><title type="html">A quick introduction to story mapping</title><link href="https://junwin.github.io//jekyll/update/2017/01/27/storymapping.html" rel="alternate" type="text/html" title="A quick introduction to story mapping" /><published>2017-01-27T08:05:18-06:00</published><updated>2017-01-27T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/27/storymapping</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/27/storymapping.html">&lt;p&gt;&lt;strong&gt;A serious issue with agile is the lack of the “big picture.”&lt;/strong&gt;
 Agile breaks larger requirements into smaller chunks or “stories.” These stories are quick to develop and enable users to get a rapid view of progress as the stories are completed in a series of short sprints.&lt;/p&gt;
@@ -116,7 +113,7 @@ E2E tests can be like training wheels precursor to better CDTs&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Cross-functional testing&lt;/strong&gt; - covers effects/behaviors that cannot be implemented like a normal feature - often affected by cross cutting concerns when developing a service e.g. latency, number of supported users, security, way the UI works&lt;/p&gt;
 
-&lt;p&gt;Performance tests&lt;/p&gt;</content><summary type="html">Some notes on testing - work in progress…</summary></entry><entry><title type="html">SOA, ESB and event driven architectures -  oh my!!</title><link href="https://junwin.github.io//jekyll/update/2017/01/25/designDecisions.html" rel="alternate" type="text/html" title="SOA, ESB and event driven architectures -  oh my!!" /><published>2017-01-25T08:05:18-06:00</published><updated>2017-01-25T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/25/designDecisions</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/25/designDecisions.html">&lt;p&gt;1)  Service Orientated Architecture (SOA)
+&lt;p&gt;Performance tests&lt;/p&gt;</content><summary type="html">Some notes on testing - work in progress…</summary></entry><entry><title type="html">SOA, ESB and event driven architectures -  oh my!!</title><link href="https://junwin.github.io//jekyll/update/2017/01/25/designDecisions.html" rel="alternate" type="text/html" title="SOA, ESB and event driven architectures -  oh my!!" /><published>2017-01-25T08:05:18-06:00</published><updated>2017-01-25T08:05:18-06:00</updated><id>https://junwin.github.io//jekyll/update/2017/01/25/designDecisions</id><content type="html" xml:base="https://junwin.github.io//jekyll/update/2017/01/25/designDecisions.html">&lt;p&gt;&lt;strong&gt;Service Orientated Architecture (SOA)&lt;/strong&gt;
 SOA is an architectural concept where different services can be discovered and their interfaces are developed so that different systems can use them irrespective of the development platform. Its key goal is to facilitate reuse of common services with an organization or some wider ecosystem. The main features are:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Services are can be used without consideration of how they were developed or where they are deployed.&lt;/li&gt;
@@ -127,21 +124,18 @@ SOA is an architectural concept where different services can be discovered and t
 &lt;p&gt;A draw back to the SOA model is that it is centralized and additional methods are needed to provide failover and scaling.
 Clients are coupled to the service by consuming its interface, thus changes to the service can impact the client.&lt;/p&gt;
 
-&lt;p&gt;2) Enterprise Service Bus bases architecture (ESB)
-An ESB usually has a centralized bus that is used to route messages to different components. The ESB provides additional features to facilitate translating and converting the format of the requests and responses that concern them as well as filtering and content-based routing capabilities. Despite the features provided by an ESB, the essential architecture is still point to point SOA and has the same problems with coupling and centralization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Enterprise Service Bus bases architecture (ESB)&lt;/strong&gt; An ESB usually has a centralized bus that is used to route messages to different components. The ESB provides additional features to facilitate translating and converting the format of the requests and responses that concern them as well as filtering and content-based routing capabilities. Despite the features provided by an ESB, the essential architecture is still point to point SOA and has the same problems with coupling and centralization.&lt;/p&gt;
 
-&lt;p&gt;3) Event Driven Architecture (EDA)
-An Event Driven Architecture(EDA) uses messaging fabric to connect a set of applications. It does not use a point to point design, any given application can usually see all the events raised by other applications. The EDA provides the equivalent filtering, transforming and routing capabilities as an ESB. However, the EDA puts emphasis on decoupling and decentralization. An EDA generally uses a canonical model to decouple different components, in trading applications this is often based on FIX protocol.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Event Driven Architecture (EDA)&lt;/strong&gt; An EDA uses messaging fabric to connect a set of applications. It does not use a point to point design, any given application can usually see all the events raised by other applications. The EDA provides the equivalent filtering, transforming and routing capabilities as an ESB. However, the EDA puts emphasis on decoupling and decentralization. An EDA generally uses a canonical model to decouple different components, in trading applications this is often based on FIX protocol.&lt;/p&gt;
 
-&lt;p&gt;4) Staged Event Driven Architecture (SEDA)
-A staged event driven architecture (SEDA)  decomposes a complex system into a series of stages connected by queues. SEDA is a variant of an EDA that explicitly exposes a pipe-line of operations, the main benefits are:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Staged Event Driven Architecture (SEDA)&lt;/strong&gt; (SEDA)  decomposes a complex system into a series of stages connected by queues. SEDA is a variant of an EDA that explicitly exposes a pipe-line of operations, the main benefits are:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;It can produce a highly scalable solution, with no centralized points of failure.&lt;/li&gt;
   &lt;li&gt;It simplifies the rollout of additional components, and eases the on-going maintenance overheads.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;It is suited to circumstances where actions depend on some event, for example, when some data becomes available (an event) a pipe line of actions are performed. In most cases these events are modeled as messages that can be sent to one or more components (stages).
-Events flow from producers to components that consume (and may produce) along a predefined sequence with no use of a central routing service.&lt;/p&gt;</content><summary type="html">1)  Service Orientated Architecture (SOA)
+Events flow from producers to components that consume (and may produce) along a predefined sequence with no use of a central routing service.&lt;/p&gt;</content><summary type="html">Service Orientated Architecture (SOA)
 SOA is an architectural concept where different services can be discovered and their interfaces are developed so that different systems can use them irrespective of the development platform. Its key goal is to facilitate reuse of common services with an organization or some wider ecosystem. The main features are:
 
   Services are can be used without consideration of how they were developed or where they are deployed.
