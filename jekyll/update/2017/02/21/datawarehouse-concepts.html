@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>John Unwin&#39;s ramblings</title>
-  <meta name="description" content="Some ramblings about different topics">
+  <title>Datawarehouse concepts</title>
+  <meta name="description" content="I have been revisiting strategies of using data warehouses in conjunction with transactional systems so decided to put down some of the concepts here.">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="https://junwin.github.io//">
+  <link rel="canonical" href="https://junwin.github.io//jekyll/update/2017/02/21/datawarehouse-concepts.html">
   <link rel="alternate" type="application/rss+xml" title="John Unwin&#39;s ramblings" href="/feed.xml">
   
   
@@ -58,132 +58,39 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Datawarehouse concepts</h1>
+    <p class="post-meta"><time datetime="2017-02-21T15:45:18-06:00" itemprop="datePublished">Feb 21, 2017</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>I have been revisiting strategies of using data warehouses in conjunction with transactional systems so decided to put down some of the concepts here.</p>
+
+<p>A data warehouse aggregates information from different often heterogeneous sources. In many cases, an integration layer and ETL is used to build the data warehouse.</p>
+
+<p>Frequently, a set of data marts is constructed using ETL to pull data from the central warehouse. These data marts focus on a single area of the business. Hence while distinct domains may exist in the data warehouses, information from one or more of the can be pulled into a data mart.</p>
+
+<p>Facts are quantitative data about some aspect of a business or domain. Some facts relate to transactions e.g. sales; others might be snapshots of data at some point in time, others can be aggregations.</p>
+
+<p><strong>Dimensional storage of data.</strong> In this case, the data is frequently modeled as a star schema (see Ralph Kimball) In this model transactional data is modeled as facts and any information that provides context into dimensions. For example, a stock trade might have facts (quantity, price) and dimensions (account name, product, trade date, period, location) the dimensions are <em>not</em> normalized.</p>
+
+<p><strong>Normalized storage of data.</strong>
+In this model, tables use normalized data (3NF) to store data. Business domains(accounts, trades, products, etc.) or processes are used to group the tables.</p>
+
+<p>Dimensional models can be simpler to use, but harder to change and adapt, whereas normalized models can be easier to extend and change but present a steeper learning curve.</p>
+
+<p><strong>Strategies for designing a data warehouse</strong> Bottom up - data marts are designed to meet specific business needs, and these marts are then analyzed to form the facts and dimensions in the enterprise model. Top down - the schema is decomposed from an enterprise model.</p>
+
+<p><strong>References</strong>
+Start scheme https://en.wikipedia.org/wiki/Star_schema<br />
+Snowflake schema https://en.wikipedia.org/wiki/Snowflake_schema</p>
+
+  </div>
+
   
-  
-
-
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Feb 21, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/02/21/errorhandling-ideas.html">Working out a strategy for error handling.</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Feb 21, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/02/21/datawarehouse-concepts.html">Datawarehouse concepts</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Feb 3, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/02/03/searching-canonical.html">the futile search for an ideal canonical model</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 27, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/01/27/writing-style.html">Writing style - George Orwell</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 27, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/01/27/storymapping.html">A quick introduction to story mapping</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 25, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/01/25/testing.html">testing notes</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 25, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/01/25/designDecisions.html">SOA, ESB and event driven architectures -  oh my!!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 25, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/01/25/pets-cattle.html">Pets, Cattle and the Chaos Monkey – why your pets need to stay away from the datacenter</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 24, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/01/24/continuous-delivery.html">Continuous Delivery</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 1, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/01/01/quickintro-scrum.html">A quick introduction to scrum</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 15, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2015/09/15/whycloud-metters.html">Why the cloud matters to your development team</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 11, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2015/09/11/thinking-ofscaling-scrum.html">Thinking of scaling your scrum team? Think again.</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 6, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2015/09/06/get-rid-of-features.html">Need to create value quickly – then get rid of half of your features</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 27, 2010</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2010/01/27/simplybrilliant.html">Notes from the book called Simply Brilliant by Fergus O&#39;Connell</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </main>
