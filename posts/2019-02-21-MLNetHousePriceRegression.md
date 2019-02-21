@@ -13,6 +13,7 @@ In this case, we will use a TextLoader to define the features we want to work wi
 
 Its easy to change the features, so makes experimenting with different features to understand their effect of training and be aware of over and under fitting.
 
+```c#
 _textLoader = mlContext.Data.CreateTextLoader(new NextLoader.Arguments()
 {
 Separators = new[] { ‘,’ },
@@ -31,6 +32,7 @@ new TextLoader.Column(“GarageType”, DataKind.Text, 16),
 new TextLoader.Column(“SoldPrice”, DataKind.R4, 9)
 }
 });
+```
 
 The TextLoader can then be used to read the input file into a DataView that is used downstream for training and testing.
 
