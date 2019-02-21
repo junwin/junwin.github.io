@@ -1,3 +1,6 @@
+
+#Applying ML.NET to a regression problem
+
 ML.NET is an opensource cross-platform machine learning framework intended for .NET developers. It provides a great set of tools to let you implement machine learning applications using .NET – you can find out more about ML.NET here
 
 To understand how the functionality fits into the typical workflow of accessing data, selecting features, normalisation, training the model and evaluating the fit using test data sets. I took a look at implementing a simple regression application to predict the sale price of a house given a simple set of features over about 800 home sales.
