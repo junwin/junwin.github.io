@@ -45,32 +45,34 @@ The trainer to be used and its parameters – ML.NET offers different trainers a
 So the pipeline lets you organize the operations used to train and support prediction, for example, the normalization determined in the pipeline applied to the prediction.
 
 Check out the code to see this in action.
-
+```c#
 var pipeline = mlContext.Transforms.CopyColumns(inputColumnName: “SoldPrice”, outputColumnName: “Label”)
 .Append(mlContext.Transforms.Categorical.OneHotEncoding(“GarageType”))
 .Append(mlContext.Transforms.Categorical.OneHotEncoding(“Area”))
 .Append(mlContext.Transforms.Concatenate(“Features”, “Area”, “Rooms”, “BedRooms”, “BedRoomsBsmt”, “FullBath”, “HalfBath”, “Floors”, “GarageType”, “LotSize”))
 .Append(mlContext.Transforms.Normalize(new NormalizingEstimator.MinMaxColumn(inputColumnName: “Features”, outputColumnName: “FeaturesNormalized”, fixZero: true)))
 .Append(mlContext.Regression.Trainers.FastTree(featureColumn: “FeaturesNormalized”));
-
+```
 Once we have our pipeline set up we can get to work training and evaluating the fit, before we can do that we need to split off some data from the set provided for  testing.
 
 For example to split the data 90% for training and 10% for a test, you use the TrainTestSplit method:
 
+```c#
 var (trainData, testData) = mlContext.Regression.TrainTestSplit(dataView, testFraction: 0.1);
+```
 
 Training
 We now have the pipeline so armed with our training data we can create a trained model.
-
+```c#
 // Train the model.
 var model = pipeline.Fit(trainData);
-
+```
 Evaluation
 We need to understand just how well training has worked, so we can evaluate the test data and check the quality metrics:
-
+```c#
 // Compute quality metrics on the test set.
 var metrics = mlContext.Regression.Evaluate(model.Transform(testData));
-
+```
 The following data points are available – for more info see here
 
 L1 – Gets the absolute loss of the model.
@@ -88,17 +90,17 @@ using (var fileStream = new FileStream(_modelPath, FileMode.Create, FileAccess.W
 mlContext.Model.Save(model, fileStream);
 
 To predict a price we’ll first load the model as follows:
-
+```c#
 ITransformer loadedModel;
 using (var stream = new FileStream(_modelPath, FileMode.Open, FileAccess.Read, FileShare.Read))
 {
 loadedModel = mlContext.Model.Load(stream);
 }
 
-Then create a helper function to run the predictions:
+// create a helper function to run the predictions:
 
 var predictionFunction = loadedModel.CreatePredictionEngine<HouseData, HousePrediction>(mlContext);
-
+```
 This uses two classes:
 
 HouseData (to enter the features of the house we want to make the prediction for.
@@ -107,6 +109,7 @@ You can see these data classes in the code provided.
 
 To run the prediction:
 
+```c#
 var prediction = predictionFunction.Predict(housePriceSample);
-
+```
  
