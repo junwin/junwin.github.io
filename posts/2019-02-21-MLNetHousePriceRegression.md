@@ -1,11 +1,11 @@
 
 # Applying ML.NET to a regression problem
 
-ML.NET is an opensource cross-platform machine learning framework intended for .NET developers. It provides a great set of tools to let you implement machine learning applications using .NET – you can find out more about ML.NET here
+ML.NET is an opensource cross-platform machine learning framework intended for .NET developers. It provides a great set of tools to let you implement machine learning applications using .NET – you can find out more about ML.NET [here](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)
 
 To understand how the functionality fits into the typical workflow of accessing data, selecting features, normalisation, training the model and evaluating the fit using test data sets. I took a look at implementing a simple regression application to predict the sale price of a house given a simple set of features over about 800 home sales.
 
-The focus was on getting a small sample up and running, that can then be used to experiment with the choice of feature and training algorithms. You can find the code for this article on GitHub here
+The focus was on getting a small sample up and running, that can then be used to experiment with the choice of feature and training algorithms. You can find the code for this article on GitHub [here](https://github.com/junwin/MLNetRegression)
 
 Loading Data
 My starting point was a .csv file( see HouseDataExtended3Anon.csv in the sample code) with different features for 800 sales from a friendly realtor – so the first thing I would want to do is to load that into my app.
