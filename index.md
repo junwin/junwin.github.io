@@ -1,10 +1,9 @@
 ## John Unwin's ramblings
 
 
-  [Using ML.NET to predict house prices] (https://junwin.github.io/posts/2019-02-21-MLNETHousePriceRegression.md)
-  [Working out a strategy for error handling] 
+  [Using ML.NET to predict house prices](https://junwin.github.io/posts/2019-02-21-MLNETHousePriceRegression.md)
   
-  (https://junwin.github.io/posts/2017-02-22-errorhandling-ideas.html)
+  [Working out a strategy for error handling](https://junwin.github.io/posts/2017-02-22-errorhandling-ideas.html)
   
   [Datawarehouse concepts]( https://junwin.github.io/posts/2017-02-21-datawarehouse-concepts.html)
 
