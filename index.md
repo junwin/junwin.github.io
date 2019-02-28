@@ -1,7 +1,7 @@
 ## John Unwin's ramblings
 
 
-  [Using ML.NET to predict house prices](https://junwin.github.io/posts/2019-02-21-MLNETHousePriceRegression.html)
+  [Using ML.NET to predict house prices](https://junwin.github.io/posts/2019-02-21-MLNetHousePriceRegression.html)
   
   [Working out a strategy for error handling](https://junwin.github.io/posts/2017-02-22-errorhandling-ideas.html)
   
