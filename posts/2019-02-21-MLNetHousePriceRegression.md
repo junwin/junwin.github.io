@@ -5,114 +5,195 @@ ML.NET is an opensource cross-platform machine learning framework intended for .
 
 To understand how the functionality fits into the typical workflow of accessing data, selecting features, normalisation, training the model and evaluating the fit using test data sets. I took a look at implementing a simple regression application to predict the sale price of a house given a simple set of features over about 800 home sales.
 
+
+
+ML.NET provides a developer friendly API for machine learning, in terms of:
+	• Transforms(Feature selection, Text, Schema, Categorical, data normalization, handling missing data)
+	• Learners(Linear, Boosted trees, SVM, K-Means)
+	• Tools(Data framework, Evaluators, calibrators, Data Loaders)
+
+Put together these support the typical ML workflow:
+	• Data preparation(loading and feature extraction)
+	• Training (Training and evaluating models)
+	• Running( using the trained model)
+
+A big advantage of using the ML.Net framework is that it allows the user to easily experiment with different learning algorithms, changing the set of features, sizes of training and test datasets to get the best results for their problem. This avoids a common issue where teams spend a lot of time collecting unnecessary data and produce models that do not perform well.
+
+
+##Key Concept
+
+When discussing ML.Net it is important to recognize to use of:
+	• Transformers - these convert and manipulate data and produce data as an output.
+	• Estimators - these take data and produce a transformer or a model, e.g. when training
+	• Prediction - this takes a single row of features and predicts a single row of results. 
+
+![Key Concept]({{ site.url }}/assets/MLNETConcepts.png)
+
+	We will see how these come into play in the simple regression sample.
+
+ML.NET lets you develop a range of ML systems
+	• Forecasting/Regression
+	• Issue Classification
+	• Predictive maintenance
+	• Image classification
+	• Sentiment Analysis
+	• Recommender Systems
+	• Clustering systems
+
+
+## House price sample
+In the sample we are going to take a look a supervised learning problem of 
+Multivariate linear regression. In this case we want use one or more features to predict the sale price of a house.
 The focus was on getting a small sample up and running, that can then be used to experiment with the choice of feature and training algorithms. You can find the code for this article on GitHub [here](https://github.com/junwin/MLNetRegression)
 
-Loading Data
-My starting point was a .csv file( see HouseDataExtended3Anon.csv in the sample code) with different features for 800 sales from a friendly realtor – so the first thing I would want to do is to load that into my app.
 
-A strong point for ML.NET is that there are plenty of ways that a .NET developer already knows to pull data in and especially easy access to data held in corporate databases.
+We will train the model using a set of sales data to predict the sale price of a house given a set of features over about 800 home sales. While the sample data has a wide range of features, a key aspect of developing a useful system would be to understand the choice of features used affects the model.
 
-In this case, we will use a TextLoader to define the features we want to work with in terms of their names, type and position in the .csv file.
 
-Its easy to change the features, so makes experimenting with different features to understand their effect of training and be aware of over and under fitting.
+	
+	
+    
+## Data class
+Our first job is to define a simple data class that we can use when loading our .csv file of house data.
+The important part to note is the [LoadColumn()] attributes, these allow us to associate the  fields to different columns in the input.
+It gives us a simple way to adapt to changes in the data sets we can process.
+The class is also used when we want to predict the price of some house.
+We do not need to use all the fields in the class when training the model.
+	
+```c#
+	public class HouseData
+	    {
+	        [LoadColumn(3)]
+	        public float Area;
+	
+	        [LoadColumn(4)]
+	        public float Rooms;
+	
+	        [LoadColumn(13)]
+	        public float BedRooms;
+	
+	        [LoadColumn(12)]
+	        public float BedRoomsBsmt;
+	
+	        [LoadColumn(5)]
+	        public float FullBath;
+	
+	        [LoadColumn(6)]
+	        public float HalfBath;
+	
+	        [LoadColumn(7)]
+	        public float Floors;
+	
+	        [LoadColumn(9)]
+	        public float SoldPrice;
+	
+	        [LoadColumn(22)]
+	        public float LotSize;
+	
+	        [LoadColumn(16)]
+	        public string GarageType;
+	    }
+```
+	
+
+##Training and Saving the model
+
+Most of the inteesting work in the sample is done in the HousePriceModel class CreateHousePriceModelUsingPipeline(...) method.
+
+* The code snippet shows how to:
+* Read the data from a .csv file
+* Select a training algorytem that will be used
+* Choose features to use when training
+* Handling string features
+* Create a pipline to process the data and train the model
+
 
 ```c#
-_textLoader = mlContext.Data.CreateTextLoader(new NextLoader.Arguments()
-{
-Separators = new[] { ‘,’ },
-HasHeader = true,
-Column = new[]
-{
-new TextLoader.Column(“Area”, DataKind.Text, 3),
-new TextLoader.Column(“Rooms”, DataKind.R4, 4),
-new TextLoader.Column(“BedRooms”, DataKind.R4, 13),
-new TextLoader.Column(“BedRoomsBsmt”, DataKind.R4, 12),
-new TextLoader.Column(“FullBath”, DataKind.R4, 5),
-new TextLoader.Column(“HalfBath”, DataKind.R4, 6),
-new TextLoader.Column(“Floors”, DataKind.R4, 7),
-new TextLoader.Column(“LotSize”, DataKind.R4, 22),
-new TextLoader.Column(“GarageType”, DataKind.Text, 16),
-new TextLoader.Column(“SoldPrice”, DataKind.R4, 9)
-}
-});
+          Console.WriteLine("Training product forecasting");
+
+            // Read the sample data into a view that we can use for training
+            var trainingDataView = mlContext.Data.ReadFromTextFile<HouseData>(dataPath, hasHeader: true, separatorChar: ',');
+
+            // create the trainer we will use  - ML.NET supports different training methods
+            var trainer = mlContext.Regression.Trainers.FastTree(labelColumn: DefaultColumnNames.Label, featureColumn: DefaultColumnNames.Features);
+
+            // Create the training pipeline, this determines how the input data will be transformed
+            // We can also select the features we want to use here, the names used correspond to the porperty names in 
+            // HouseData
+            string[] numericFeatureNames = { "Area","Rooms", "BedRooms", "BedRoomsBsmt", "FullBath", "HalfBath", "Floors","LotSize"};
+
+            // We distinguish between features that are strings e.g. {"attached","detached","none") garage types and 
+            // Numeric faeature, since learning systems only work with numeric values we need to convert the strings.
+            // You can see that in the training pipeline we have applied OneHotEncoding to do this.
+            string[] categoryFeatureNames = { "GarageType" };
+            
+            var trainingPipeline = mlContext.Transforms.Concatenate(NumFeatures, numericFeatureNames)
+                .Append(mlContext.Transforms.Categorical.OneHotEncoding(CatFeatures, inputColumnName: categoryFeatureNames[0]))
+                .Append(mlContext.Transforms.Concatenate(DefaultColumnNames.Features, NumFeatures, CatFeatures))
+                .Append(mlContext.Transforms.CopyColumns(DefaultColumnNames.Label, inputColumnName: nameof(HouseData.SoldPrice)))
+                .Append(trainer);
+
+            // Split the data 90:10 into train and test sets, train and evaluate.
+            var (trainData, testData) = mlContext.Regression.TrainTestSplit(trainingDataView, testFraction: 0.2);
+
+			```
+
+##Evaluation
+
+After training we need to evaluate our model using test data, this will indicate the size of the error between the prdicted result and the actual results. This will be part of an iterative process on a relatively small set of data to determine the best mix of features.
+There are different approaches supported by ML.NET
+
+Note that after the training and evaluation we save the model for prediction.
+
+```C#
+ // Train the model.
+            var model = trainingPipeline.Fit(trainData);
+            // Compute quality metrics on the test set.
+            var metrics = mlContext.Regression.Evaluate(model.Transform(testData));
+            Helpers.PrintRegressionMetrics(trainer.ToString(), metrics);
+
+            // Cross-Validate with single dataset (if we dont have two datasets, one for training and for evaluate)
+            // in order to evaluate and get the model's accuracy metrics
+            Console.WriteLine("=============== Cross-validating to get model's accuracy metrics ===============");
+            var crossValidationResults = mlContext.Regression.CrossValidate(data: trainingDataView, estimator: trainingPipeline, numFolds: 6, labelColumn: DefaultColumnNames.Label);
+            Helpers.PrintRegressionFoldsAverageMetrics(trainer.ToString(), crossValidationResults);
+
+            // Train the model
+            model = trainingPipeline.Fit(trainingDataView);
+
+            // Save the model for later comsumption from end-user apps
+            using (var file = File.OpenWrite(outputModelPath))
+                model.SaveTo(mlContext, file);
 ```
 
-The TextLoader can then be used to read the input file into a DataView that is used downstream for training and testing.
+Once you have tweaked the features and evaluate different training, you can then use the model to predict sales prices. I think this where the ML.NET framework really shines, because we can then use the cool tools in .Net to support different ways to use the model.
 
-Pipeline to process data
-To support the next stages we’ll create a Pipeline that supports the different transforms and operations that are then carried out.  In particular, you can manage:
+##Load and predict house sale prices
+```C#
+ public static void PredictSinglePrice(HouseData houseData, MLContext mlContext, string dataPath, string outputModelPath = "housePriceModel.zip")
+        {
+            //  Load the prediction model we saved earlier
+            ITransformer loadedModel;
+            using (var stream = new FileStream(outputModelPath, FileMode.Open, FileAccess.Read, FileShare.Read))
+            {
+                loadedModel = mlContext.Model.Load(stream);
+            }
 
-Category data – for example, GarageTypes (Attached, detached, none), most regression trainers require numeric features.
-Normalizing Features – For speed of training and accuracy, it important to normalized the numeric features so that they are all in the same range.
-The trainer to be used and its parameters – ML.NET offers different trainers and that can be configured in different ways.
-So the pipeline lets you organize the operations used to train and support prediction, for example, the normalization determined in the pipeline applied to the prediction.
+            // Creete a handy function based on our HouseData class and a class to contain the result
+            var predictionFunction = loadedModel.CreatePredictionEngine<HouseData, HousePrediction>(mlContext);
 
-Check out the code to see this in action.
-```c#
-var pipeline = mlContext.Transforms.CopyColumns(inputColumnName: “SoldPrice”, outputColumnName: “Label”)
-.Append(mlContext.Transforms.Categorical.OneHotEncoding(“GarageType”))
-.Append(mlContext.Transforms.Categorical.OneHotEncoding(“Area”))
-.Append(mlContext.Transforms.Concatenate(“Features”, “Area”, “Rooms”, “BedRooms”, “BedRoomsBsmt”, “FullBath”, “HalfBath”, “Floors”, “GarageType”, “LotSize”))
-.Append(mlContext.Transforms.Normalize(new NormalizingEstimator.MinMaxColumn(inputColumnName: “Features”, outputColumnName: “FeaturesNormalized”, fixZero: true)))
-.Append(mlContext.Regression.Trainers.FastTree(featureColumn: “FeaturesNormalized”));
+            // Predict the Sale price - TA DA
+            var prediction = predictionFunction.Predict(houseData);
+
+            var pv = prediction.SoldPrice;
+
+            Console.WriteLine($"**********************************************************************");
+            Console.WriteLine($"Predicted SellPrice: {pv:0.####}");
+            Console.WriteLine($"**********************************************************************");
+        }
+    }
 ```
-Once we have our pipeline set up we can get to work training and evaluating the fit, before we can do that we need to split off some data from the set provided for  testing.
 
-For example to split the data 90% for training and 10% for a test, you use the TrainTestSplit method:
+For this type of ML application, a typical use would be to creat a simple REST service running in a docker conatiner deployed to  Windoes Azure.  A web app written in javascript consumes the service to let people quickly see what a house should sell for.
 
-```c#
-var (trainData, testData) = mlContext.Regression.TrainTestSplit(dataView, testFraction: 0.1);
-```
-
-Training
-We now have the pipeline so armed with our training data we can create a trained model.
-```c#
-// Train the model.
-var model = pipeline.Fit(trainData);
-```
-Evaluation
-We need to understand just how well training has worked, so we can evaluate the test data and check the quality metrics:
-```c#
-// Compute quality metrics on the test set.
-var metrics = mlContext.Regression.Evaluate(model.Transform(testData));
-```
-The following data points are available – for more info see here
-
-L1 – Gets the absolute loss of the model.
-
-L2  – Gets the squared loss of the model.
-
-Rms – Gets the root mean square loss (or RMS) which is the square root of the L2 loss.
-
-RSquared – Gets the R squared value of the model, which is also known as the coefficient of determination.
-
-Saving the model and using it to predict a house sale price
-When we are happy with the training, for example, if the RMS metric is close to 1 – we can then save the model for further use:
-
-using (var fileStream = new FileStream(_modelPath, FileMode.Create, FileAccess.Write, FileShare.Write))
-mlContext.Model.Save(model, fileStream);
-
-To predict a price we’ll first load the model as follows:
-```c#
-ITransformer loadedModel;
-using (var stream = new FileStream(_modelPath, FileMode.Open, FileAccess.Read, FileShare.Read))
-{
-loadedModel = mlContext.Model.Load(stream);
-}
-
-// create a helper function to run the predictions:
-
-var predictionFunction = loadedModel.CreatePredictionEngine<HouseData, HousePrediction>(mlContext);
-```
-This uses two classes:
-
-HouseData (to enter the features of the house we want to make the prediction for.
-HousePrediction – used to return the SalePrice
-You can see these data classes in the code provided.
-
-To run the prediction:
-
-```c#
-var prediction = predictionFunction.Predict(housePriceSample);
-```
- 
+Using .Net Core we can run the backend on different hardware platforms, Visual Studio 2019, 2017 makes the creation, deployment, and management of a robust service quick and easy.
