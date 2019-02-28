@@ -96,7 +96,7 @@ We do not need to use all the fields in the class when training the model.
 ```
 	
 
-##Training and Saving the model
+## Training and Saving the model
 
 Most of the inteesting work in the sample is done in the HousePriceModel class CreateHousePriceModelUsingPipeline(...) method.
 
@@ -109,34 +109,33 @@ Most of the inteesting work in the sample is done in the HousePriceModel class C
 
 
 ```c#
-          Console.WriteLine("Training product forecasting");
+    Console.WriteLine("Training product forecasting");
 
-            // Read the sample data into a view that we can use for training
-            var trainingDataView = mlContext.Data.ReadFromTextFile<HouseData>(dataPath, hasHeader: true, separatorChar: ',');
+    // Read the sample data into a view that we can use for training
+    var trainingDataView = mlContext.Data.ReadFromTextFile<HouseData>(dataPath, hasHeader: true, separatorChar: ',');
 
-            // create the trainer we will use  - ML.NET supports different training methods
-            var trainer = mlContext.Regression.Trainers.FastTree(labelColumn: DefaultColumnNames.Label, featureColumn: DefaultColumnNames.Features);
+    // create the trainer we will use  - ML.NET supports different training methods
+     var trainer = mlContext.Regression.Trainers.FastTree(labelColumn: DefaultColumnNames.Label, featureColumn: DefaultColumnNames.Features);
 
-            // Create the training pipeline, this determines how the input data will be transformed
-            // We can also select the features we want to use here, the names used correspond to the porperty names in 
-            // HouseData
-            string[] numericFeatureNames = { "Area","Rooms", "BedRooms", "BedRoomsBsmt", "FullBath", "HalfBath", "Floors","LotSize"};
+    // Create the training pipeline, this determines how the input data will be transformed
+    // We can also select the features we want to use here, the names used correspond to the porperty names in 
+    // HouseData
+    string[] numericFeatureNames = { "Area","Rooms", "BedRooms", "BedRoomsBsmt", "FullBath", "HalfBath", "Floors","LotSize"};
 
-            // We distinguish between features that are strings e.g. {"attached","detached","none") garage types and 
-            // Numeric faeature, since learning systems only work with numeric values we need to convert the strings.
-            // You can see that in the training pipeline we have applied OneHotEncoding to do this.
-            string[] categoryFeatureNames = { "GarageType" };
-            
-            var trainingPipeline = mlContext.Transforms.Concatenate(NumFeatures, numericFeatureNames)
-                .Append(mlContext.Transforms.Categorical.OneHotEncoding(CatFeatures, inputColumnName: categoryFeatureNames[0]))
-                .Append(mlContext.Transforms.Concatenate(DefaultColumnNames.Features, NumFeatures, CatFeatures))
-                .Append(mlContext.Transforms.CopyColumns(DefaultColumnNames.Label, inputColumnName: nameof(HouseData.SoldPrice)))
-                .Append(trainer);
+    // We distinguish between features that are strings e.g. {"attached","detached","none") garage types and 
+    // Numeric faeature, since learning systems only work with numeric values we need to convert the strings.
+    // You can see that in the training pipeline we have applied OneHotEncoding to do this.
+    string[] categoryFeatureNames = { "GarageType" };
+    
+    var trainingPipeline = mlContext.Transforms.Concatenate(NumFeatures, numericFeatureNames)
+        .Append(mlContext.Transforms.Categorical.OneHotEncoding(CatFeatures, inputColumnName: categoryFeatureNames[0]))
+        .Append(mlContext.Transforms.Concatenate(DefaultColumnNames.Features, NumFeatures, CatFeatures))
+        .Append(mlContext.Transforms.CopyColumns(DefaultColumnNames.Label, inputColumnName: nameof(HouseData.SoldPrice)))
+        .Append(trainer);
 
-            // Split the data 90:10 into train and test sets, train and evaluate.
-            var (trainData, testData) = mlContext.Regression.TrainTestSplit(trainingDataView, testFraction: 0.2);
-
-			```
+    // Split the data 90:10 into train and test sets, train and evaluate.
+    var (trainData, testData) = mlContext.Regression.TrainTestSplit(trainingDataView, testFraction: 0.2);
+```
 
 ## Evaluation
 
