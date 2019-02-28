@@ -1,7 +1,8 @@
 
 # Applying ML.NET to a regression problem
 
-ML.NET is an opensource cross-platform machine learning framework intended for .NET developers. It provides a great set of tools to let you implement machine learning applications using .NET – you can find out more about ML.NET [here](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)
+ML.NET is an opensource cross-platform machine learning framework intended for .NET developers. Many ML libraries e.g. TensorFlow anre written in Python and lever routines written in C++, this can add extra steps and hurdles for apps that will be impimented on the .Net platform and that where ML.NET really helps.It provides a great set of tools to let you implement machine learning applications using .NET – you can find out more about ML.NET [here](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)
+
 
 To understand how the functionality fits into the typical workflow of accessing data, selecting features, normalisation, training the model and evaluating the fit using test data sets. I took a look at implementing a simple regression application to predict the sale price of a house given a simple set of features over about 800 home sales.
 
@@ -64,7 +65,7 @@ We do not need to use all the fields in the class when training the model.
 	public class HouseData
 	    {
 	        [LoadColumn(3)]
-	        public float Area;
+	        public string Area;
 	
 	        [LoadColumn(4)]
 	        public float Rooms;
@@ -107,6 +108,14 @@ Most of the inteesting work in the sample is done in the HousePriceModel class C
 * Handling string features
 * Create a pipline to process the data and train the model
 
+In these types of problem you will typically need to normalize the inbound data,consider the feture Rooms and BedRooms, the range of values of Rooms is typically larger then BedRooms, we normalize them to have the same infulence on fit, and to speed up (depending on the trainer) the time to fitting.The trainer we using automatically normalizes the features, though the framework provides tools to support normilizing if you need to do this yourself.
+
+Similary, depending on the number of features used (and if the model is overfitting) we apply  [Regularization](http://mlwiki.org/index.php/Regularization) to the trainer - this essentially keeps all the features but adds a weight to each of the features parameters to reduce the effect. IN our case the trainer will handle regularization, and adjustments can be made when g=creating the trainer.
+
+
+// One topic we have not covered in this short sample is nomalization, consider the feture Rooms and BedRooms, 
+            // the range of values of Rooms is typically larger then BedRooms, we normalize them to have the same infulence
+            // on fit, and to speed up (depending on the trainer) the time to fitting.
 
 ```c#
     Console.WriteLine("Training product forecasting");
@@ -141,28 +150,28 @@ Most of the inteesting work in the sample is done in the HousePriceModel class C
 
 After training we need to evaluate our model using test data, this will indicate the size of the error between the prdicted result and the actual results. This will be part of an iterative process on a relatively small set of data to determine the best mix of features.
 There are different approaches supported by ML.NET
+We use cross-valdiation to estimate the variance of the model quality from one run to another,it and also eliminates the need to extract a separate test set for evaluation. We display the quality metrics in order to evaluate and get the model's accuracy metrics
+
+https://en.wikipedia.org/wiki/Cross-validation_(statistics)
 
 Note that after the training and evaluation we save the model for prediction.
 
 ```C#
- // Train the model.
-            var model = trainingPipeline.Fit(trainData);
-            // Compute quality metrics on the test set.
-            var metrics = mlContext.Regression.Evaluate(model.Transform(testData));
-            Helpers.PrintRegressionMetrics(trainer.ToString(), metrics);
+ 
+//  We use cross-valdiation toestimate the variance of the model quality from one run to another,
+// it and also eliminates the need to extract a separate test set for evaluation.
+// We display the quality metrics in order to evaluate and get the model's accuracy metrics
+Console.WriteLine("=============== Cross-validating to get model's accuracy metrics ===============");
+var crossValidationResults = mlContext.Regression.CrossValidate(data: trainingDataView, estimator: trainingPipeline, numFolds: 6,                   labelColumn: DefaultColumnNames.Label);
 
-            // Cross-Validate with single dataset (if we dont have two datasets, one for training and for evaluate)
-            // in order to evaluate and get the model's accuracy metrics
-            Console.WriteLine("=============== Cross-validating to get model's accuracy metrics ===============");
-            var crossValidationResults = mlContext.Regression.CrossValidate(data: trainingDataView, estimator: trainingPipeline, numFolds: 6, labelColumn: DefaultColumnNames.Label);
-            Helpers.PrintRegressionFoldsAverageMetrics(trainer.ToString(), crossValidationResults);
+Helpers.PrintRegressionFoldsAverageMetrics(trainer.ToString(), crossValidationResults);
 
-            // Train the model
-            model = trainingPipeline.Fit(trainingDataView);
+// Train the model
+var model = trainingPipeline.Fit(trainingDataView);
 
-            // Save the model for later comsumption from end-user apps
-            using (var file = File.OpenWrite(outputModelPath))
-                model.SaveTo(mlContext, file);
+// Save the model for later comsumption from end-user apps
+using (var file = File.OpenWrite(outputModelPath))
+    model.SaveTo(mlContext, file);
 ```
 
 Once you have tweaked the features and evaluate different training, you can then use the model to predict sales prices. I think this where the ML.NET framework really shines, because we can then use the cool tools in .Net to support different ways to use the model.
