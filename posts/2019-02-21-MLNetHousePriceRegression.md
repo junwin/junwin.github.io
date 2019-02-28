@@ -20,14 +20,14 @@ Put together these support the typical ML workflow:
 A big advantage of using the ML.Net framework is that it allows the user to easily experiment with different learning algorithms, changing the set of features, sizes of training and test datasets to get the best results for their problem. This avoids a common issue where teams spend a lot of time collecting unnecessary data and produce models that do not perform well.
 
 
-##Key Concept
+## Key Concept
 
 When discussing ML.Net it is important to recognize to use of:
 	• Transformers - these convert and manipulate data and produce data as an output.
 	• Estimators - these take data and produce a transformer or a model, e.g. when training
 	• Prediction - this takes a single row of features and predicts a single row of results. 
 
-![Key Concept]({{ site.url }}/assets/MLNETConcepts.png)
+[Key Concept]({{ site.url }}/assets/MLNETConcepts.png)
 
 	We will see how these come into play in the simple regression sample.
 
@@ -138,7 +138,7 @@ Most of the inteesting work in the sample is done in the HousePriceModel class C
 
 			```
 
-##Evaluation
+## Evaluation
 
 After training we need to evaluate our model using test data, this will indicate the size of the error between the prdicted result and the actual results. This will be part of an iterative process on a relatively small set of data to determine the best mix of features.
 There are different approaches supported by ML.NET
@@ -168,7 +168,7 @@ Note that after the training and evaluation we save the model for prediction.
 
 Once you have tweaked the features and evaluate different training, you can then use the model to predict sales prices. I think this where the ML.NET framework really shines, because we can then use the cool tools in .Net to support different ways to use the model.
 
-##Load and predict house sale prices
+## Load and predict house sale prices
 ```C#
  public static void PredictSinglePrice(HouseData houseData, MLContext mlContext, string dataPath, string outputModelPath = "housePriceModel.zip")
         {
