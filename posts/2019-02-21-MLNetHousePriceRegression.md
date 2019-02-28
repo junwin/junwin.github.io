@@ -27,7 +27,7 @@ When discussing ML.Net it is important to recognize to use of:
 	• Estimators - these take data and produce a transformer or a model, e.g. when training
 	• Prediction - this takes a single row of features and predicts a single row of results. 
 
-[Key Concept]({{ site.url }}/assets/MLNETConcepts.png)
+![key concept]({{ site.url }}/assets/MLNETConcepts.png)
 
 	We will see how these come into play in the simple regression sample.
 
