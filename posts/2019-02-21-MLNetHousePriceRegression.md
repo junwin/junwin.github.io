@@ -143,6 +143,22 @@ After training we need to evaluate our model using test data, this will indicate
 
 https://en.wikipedia.org/wiki/Cross-validation_(statistics)
 
+We will look at 2 metrics:
+* L1 Loss - you need to minimize this, though if the input labels are not normaized this can be quite high.
+* R-squared - provides a goodness of fit for linear regressions modelswill be between 0 -> 1, the closer to 1 the better.
+
+
+where:
+The absolute loss is defined as  L1 = (1/m) * sum( abs( yi - y'i))
+
+For more on R-squared see http://statisticsbyjim.com/regression/interpret-r-squared-regression/
+
+Running the code as is yeilds an R-Sqaured of 0.608, we will want to improve this. 
+
+A first step would be to start to experiment with the feature selection, perhaps to start with a reduced list of features *after* we have a clearer understanding then consider getting a wider set of data.
+
+
+
 Note that after the training and evaluation we save the model for prediction.
 
  ```C#
@@ -157,6 +173,13 @@ Helpers.PrintRegressionFoldsAverageMetrics(trainer.ToString(), crossValidationRe
 // Train the model
 var model = trainingPipeline.Fit(trainingDataView);
 
+
+```
+
+
+# Saving the model for later use
+```C#
+
 // Save the model for later comsumption from end-user apps
 using (var file = File.OpenWrite(outputModelPath))
     model.SaveTo(mlContext, file);
@@ -165,6 +188,8 @@ using (var file = File.OpenWrite(outputModelPath))
 
 # Load and predict house sale prices
 Once you have tweaked the features and evaluate different training, you can then use the model to predict sales prices. I think this where the ML .NET framework shines because we can then use the cool tools in .Net to support different ways to use the model.
+
+You can find a desciption of the meterics used here https://docs.microsoft.com/en-us/nimbusml/concepts/metrics
 ```C#
  public static void PredictSinglePrice(HouseData houseData, MLContext mlContext, string dataPath, string outputModelPath = "housePriceModel.zip")
         {
