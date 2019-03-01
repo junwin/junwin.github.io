@@ -141,7 +141,7 @@ var trainingPipeline = mlContext.Transforms.Concatenate(NumFeatures, numericFeat
 # Evaluation
 After training we need to evaluate our model using test data, this will indicate the size of the error between the predicted result and the actual results. This will be part of an iterative process on a relatively small set of data to determine the best mix of features. There are different approaches supported by ML .NET We use cross-validation to estimate the variance of the model quality from one run to another, it and also eliminates the need to extract a separate test set for evaluation. We display the quality metrics to evaluate and get the model's accuracy metrics
 
-https://en.wikipedia.org/wiki/Cross-validation_(statistics)
+(https://en.wikipedia.org/wiki/Cross-validation_(statistics))
 
 We will look at 2 metrics:
 * L1 Loss - you need to minimize this, though if the input labels are not normaized this can be quite high.
@@ -151,7 +151,7 @@ We will look at 2 metrics:
 where:
 The absolute loss is defined as  L1 = (1/m) * sum( abs( yi - y'i))
 
-For more on R-squared see http://statisticsbyjim.com/regression/interpret-r-squared-regression/
+For more on R-squared see (http://statisticsbyjim.com/regression/interpret-r-squared-regression/)
 
 Running the code as is yeilds an R-Sqaured of 0.608, we will want to improve this. 
 
@@ -189,7 +189,7 @@ using (var file = File.OpenWrite(outputModelPath))
 # Load and predict house sale prices
 Once you have tweaked the features and evaluate different training, you can then use the model to predict sales prices. I think this where the ML .NET framework shines because we can then use the cool tools in .Net to support different ways to use the model.
 
-You can find a desciption of the meterics used here https://docs.microsoft.com/en-us/nimbusml/concepts/metrics
+You can find a desciption of the [metrics used here](https://docs.microsoft.com/en-us/nimbusml/concepts/metrics)
 ```C#
  public static void PredictSinglePrice(HouseData houseData, MLContext mlContext, string dataPath, string outputModelPath = "housePriceModel.zip")
         {
