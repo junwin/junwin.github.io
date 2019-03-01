@@ -1,7 +1,7 @@
 ## Applying ML .NET to a regression problem
-ML .Net is an opensource cross-platform machine learning framework intended for .NET developers. Python(with routines are written in C++) are generally used to develop many ML libraries, e.g. TensorFlow, and this can add extra steps and hurdles when the .Net  is used to implement ML apps and that where ML .NET helps. It provides a great set of tools to let you apply machine learning applications using .NET – you can find out more about ML .NET here
+ML .Net is an opensource cross-platform machine learning framework intended for .NET developers. Python(with routines are written in C++) is generally used to develop many ML libraries, e.g. TensorFlow, and this can add extra steps and hurdles when you need to tightly integrate ML components on the .Net platform. ML .Net provides a great set of tools to let you apply machine learning applications using .NET – you can find out more about ML .NET [here](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)
 
-To understand how the functionality fits into the typical workflow of accessing data, selecting features, normalisation, training the model and evaluating the fit using test data sets. I took a look at implementing a simple regression application to predict the sale price of a house given a simple set of features over about 800 home sales.
+
 
 ML .NET provides a developer-friendly API for machine learning, in terms of:
 * Transforms(Feature selection, Text, Schema, Categorical, data normalisation, handling missing data)
@@ -24,10 +24,17 @@ When discussing ML .NET, it is important to recognise to use of:
 ![key concept]({{ site.url }}/assets/MLNETConcepts.png)
 
 We will see how these come into play in the simple regression sample.
-ML .NET lets you develop a range of ML systems • Forecasting/Regression • Issue Classification • Predictive maintenance • Image classification • Sentiment Analysis • Recommender Systems • Clustering systems
+ML .NET lets you develop a range of ML systems
+* Forecasting/Regression
+* Issue Classification
+* Predictive maintenance
+* Image classification
+* Sentiment Analysis
+* Recommender Systems
+* Clustering systems
 
 # House price sample
-In the sample, we are going to take a look at a supervised learning problem of Multivariate linear regression. In this case, we want to use one or more features to predict the sale price of a house. The focus was on getting a small sample up and running, that can then be used to experiment with the choice of feature and training algorithms. You can find the code for this article on GitHub here
+To understand how the functionality fits into the typical workflow of data preparation, training the model and evaluating the fit using test data sets and using the model. I took a look at implementing a simple regression application to predict the sale price of a house given a simple set of features over about 800 home sales. In the sample, we are going to take a look at a supervised learning problem of Multivariate linear regression. In this case, we want to use one or more features to predict the sale price of a house. The focus was on getting a small sample up and running, that can then be used to experiment with the choice of feature and training algorithms. You can find the code for this article on GitHub here
 
 We will train the model using a set of sales data to predict the sale price of a house given a set of features over about 800 home sales. While the sample data has a wide range of features, a key aspect of developing a useful system would be to understand the choice of features used affects the model.
 
