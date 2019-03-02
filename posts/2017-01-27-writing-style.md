@@ -1,10 +1,5 @@
----
-layout: post
-title:  "Writing style - George Orwell"
-date:   2017-01-27 08:05:18 -0600
-categories: jekyll update
----
 
+# Writing style - George Orwell
 George Orwell wrote some simple rules in Politics and the English Language
 
 
