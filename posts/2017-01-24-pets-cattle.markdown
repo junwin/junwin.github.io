@@ -1,10 +1,5 @@
----
-layout: post
-title:  "Pets, Cattle and the Chaos Monkey – why your pets need to stay away from the datacenter"
-date:   2017-01-25 08:05:18 -0600
-categories: jekyll update
----
 
+# Pets, Cattle and the Chaos Monkey – why your pets need to stay away from the datacenter
 ![cows in a field]({{ site.url }}/assets/cows.png)
 
 Pets, Cattle and the Chaos Monkey – why your pets need to stay away from the datacenter
