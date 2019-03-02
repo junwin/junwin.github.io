@@ -20,7 +20,7 @@ ML .NET provides a developer-friendly API for machine learning, that supports th
 
 
 
-A significant advantage of using the ML .NET framework is that it allows the user to quickly experiment with different learning algorithms, changing the set of features, sizes of training and test datasets to get the best results for their problem. This avoids a common issue where teams spend a lot of time collecting unnecessary data and produce models that do not perform well.
+A significant advantage of using the ML .NET framework is that it allows the user to quickly experiment with different learning algorithms, changing the set of features, sizes of training and test datasets to get the best results for their problem. Experimentation avoids a common issue where teams spend a lot of time collecting unnecessary data and produce models that do not perform well.
 
 # Key Concept
 
@@ -58,7 +58,7 @@ dotnet add package Microsoft.ML --version 0.10.0
 ```
 
 # Data class
-Our first job is to define a data class that we can use when loading our .csv file of house data. The important part to note is the [LoadColumn()] attributes; these allow us to associate the fields to different columns in the input. It gives us a simple way to adapt to changes in the data sets we can process. When a user wants to predict the price of a house they use the data class to give the features. Note,we do not need to use all the fields in the class when training the model.
+Our first job is to define a data class that we can use when loading our .csv file of house data. The important part to note is the [LoadColumn()] attributes; these allow us to associate the fields to different columns in the input. It gives us a simple way to adapt to changes in the data sets we can process. When a user wants to predict the price of a house they use the data class to give the features. Note, we do not need to use all the fields in the class when training the model.
 
 ```C#
     public class HouseData
@@ -106,7 +106,7 @@ The code snippet shows how you can:
 
 In these types of problem you will typically need to normalise the inbound data, consider the feature Rooms and BedRooms, the range of values of Rooms is usually larger then BedRooms, we normalise them to have the same influence on fit, and to speed up (depending on the trainer) the time to fitting. The trainer we using automatically normalises the features, though the framework provides tools to support normalizing if you need to do this yourself.
 
-Similarly, depending on the number of features used (and if the model is overfitting) we apply Regularization to the trainer - this essentially keeps all the features but adds a weight to each of the features parameters to reduce the effect. IN our case the trainer will handle regularisation, and adjustments can be made when creating the trainer.
+Similarly, depending on the number of features used (and if the model is overfitting) we apply Regularization to the trainer - this essentially keeps all the features but adds a weight to each of the features parameters to reduce the effect. In the sample, the trainer will handle regularisation; alternatively, you can make regularisation adjustments when creating the trainer.
 
 ```C#
 
@@ -140,13 +140,13 @@ var trainingPipeline = mlContext.Transforms.Concatenate(NumFeatures, numericFeat
 
 ```
 # Evaluation
-After training we need to evaluate our model using test data, this will indicate the size of the error between the predicted result and the actual results. This will be part of an iterative process on a relatively small set of data to determine the best mix of features. There are different approaches supported by ML .NET We use cross-validation to estimate the variance of the model quality from one run to another, it and also eliminates the need to extract a separate test set for evaluation. We display the quality metrics to evaluate and get the model's accuracy metrics
+After training we need to evaluate our model using test data, this will indicate the size of the error between the predicted result and the actual results. Reducing the error will be part of an iterative process on a relatively small set of data to determine the best mix of features. There are different approaches supported by ML .NET We use cross-validation to estimate the variance of the model quality from one run to another, it and also eliminates the need to extract a separate test set for evaluation. We display the quality metrics to evaluate and get the model's accuracy metrics
 
 (https://en.wikipedia.org/wiki/Cross-validation_(statistics))
 
-We will look at 2 metrics:
-* L1 Loss - you need to minimize this, though if the input labels are not normaized this can be quite high.
-* R-squared - provides a goodness of fit for linear regressions modelswill be between 0 -> 1, the closer to 1 the better.
+We will look at two metrics:
+* L1 Loss - you need to minimise this, though if the input labels are not normalised, this can be quite high.
+* R-squared - provides a measure of the goodness of fit, for linear regressions models will be between 0 -> 1, the closer to 1 the better.
 
 
 where:
