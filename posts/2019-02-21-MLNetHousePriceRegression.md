@@ -1,4 +1,4 @@
-## Applying ML .NET to a regression problem
+# Applying ML .NET to a regression problem
 ML .Net is an opensource cross-platform machine learning framework intended for .NET developers. Python(with routines are written in C++) is generally used to develop many ML libraries, e.g. TensorFlow, and this can add extra steps and hurdles when you need to tightly integrate ML components on the .Net platform. ML .Net provides a great set of tools to let you integrate machine learning applications using .NET – you can find out more about ML .NET [here](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)
 
 ML .NET lets you develop a range of ML systems
@@ -22,7 +22,6 @@ ML .NET provides a developer-friendly API for machine learning, that supports th
 
 A significant advantage of using the ML .NET framework is that it allows the user to quickly experiment with different learning algorithms, changing the set of features, sizes of training and test datasets to get the best results for their problem. Experimentation avoids a common issue where teams spend a lot of time collecting unnecessary data and produce models that do not perform well.
 
-# Key Concept
 
 ## Learning Pipelines
 ML .NET combines transforms for data preparation and model training into a single pipeline, these are then applied to training data and the input data used to make predictions in your model.
@@ -71,15 +70,6 @@ Our first job is to define a data class that we can use when loading our .csv fi
     
             [LoadColumn(13)]
             public float BedRooms;
-    
-            [LoadColumn(12)]
-            public float BedRoomsBsmt;
-    
-            [LoadColumn(5)]
-            public float FullBath;
-    
-            [LoadColumn(6)]
-            public float HalfBath;
     
             [LoadColumn(7)]
             public float Floors;
@@ -140,30 +130,11 @@ var trainingPipeline = mlContext.Transforms.Concatenate(NumFeatures, numericFeat
 
 ```
 # Evaluation
-After training we need to evaluate our model using test data, this will indicate the size of the error between the predicted result and the actual results. Reducing the error will be part of an iterative process on a relatively small set of data to determine the best mix of features. There are different approaches supported by ML .NET We use cross-validation to estimate the variance of the model quality from one run to another, it and also eliminates the need to extract a separate test set for evaluation. We display the quality metrics to evaluate and get the model's accuracy metrics
+After training we need to evaluate our model using test data, this will indicate the size of the error between the predicted result and the actual results. Reducing the error will be part of an iterative process on a relatively small set of data to determine the best mix of features. There are different approaches supported by ML .NET We use [cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)) to estimate the variance of the model quality from one run to another, it and also eliminates the need to extract a separate test set for evaluation. We display the quality metrics to evaluate and get the model's accuracy metrics
 
-(https://en.wikipedia.org/wiki/Cross-validation_(statistics))
-
-We will look at two metrics:
-* L1 Loss - you need to minimise this, though if the input labels are not normalised, this can be quite high.
-* R-squared - provides a measure of the goodness of fit, for linear regressions models will be between 0 -> 1, the closer to 1 the better.
-
-
-where:
-The absolute loss is defined as  L1 = (1/m) * sum( abs( yi - y'i))
-
-For more on R-squared see (http://statisticsbyjim.com/regression/interpret-r-squared-regression/)
-
-Running the code as is yeilds an R-Sqaured of 0.608, we will want to improve this. 
-
-A first step would be to start to experiment with the feature selection, perhaps to start with a reduced list of features *after* we have a clearer understanding then consider getting a wider set of data.
-
-
-
-Note that after the training and evaluation we save the model for prediction.
 
  ```C#
-//  We use cross-valdiation toestimate the variance of the model quality from one run to another,
+//  We use cross-valdiation to estimate the variance of the model quality from one run to another,
 // it and also eliminates the need to extract a separate test set for evaluation.
 // We display the quality metrics in order to evaluate and get the model's accuracy metrics
 Console.WriteLine("=============== Cross-validating to get model's accuracy metrics ===============");
@@ -174,11 +145,21 @@ Helpers.PrintRegressionFoldsAverageMetrics(trainer.ToString(), crossValidationRe
 // Train the model
 var model = trainingPipeline.Fit(trainingDataView);
 
-
 ```
+
+We will look at two metrics:
+* L1 Loss - you need to minimise this, though if the input labels are not normalised, this can be quite high.
+* [R-squared](http://statisticsbyjim.com/regression/interpret-r-squared-regression/) - provides a measure of the goodness of fit, for linear regressions models will be between 0 -> 1, the closer to 1 the better.
+
+
+The absolute loss is defined as  L1 = (1/m) * sum( abs( yi - y'i))
+
+Running the code as is yeilds an R-Sqaured of 0.608, we will want to improve this. A first step would be to start to experiment with the feature selection, perhaps to start with a reduced list of features *after* we have a clearer understanding then consider getting a wider set of data.
 
 
 # Saving the model for later use
+It is simple to store the model used to predict house prices
+
 ```C#
 
 // Save the model for later comsumption from end-user apps
