@@ -61,31 +61,6 @@ Our first job is to define a data class that we can use when loading our .csv fi
 
 ![CodeSnip 1]({{ site.url }}/assets/MLNET_HousePriceSnip1.jpg)
 
-```C#
-    public class HouseData
-        {
-            [LoadColumn(3)]
-            public string Area;
-    
-            [LoadColumn(4)]
-            public float Rooms;
-    
-            [LoadColumn(13)]
-            public float BedRooms;
-    
-            [LoadColumn(7)]
-            public float Floors;
-    
-            [LoadColumn(9)]
-            public float SoldPrice;
-    
-            [LoadColumn(22)]
-            public float LotSize;
-    
-            [LoadColumn(16)]
-            public string GarageType;
-        }
- ```
 # Training and Saving the model
 CreateHousePriceModelUsingPipeline(...) method does most of the interesting work in creating the model used to predict house prices.
 
@@ -102,58 +77,12 @@ Similarly, depending on the number of features used (and if the model is overfit
 
 ![CodeSnip 2]({{ site.url }}/assets/MLNET_HousePriceSnip2.jpg)
 
-```C#
-
-// Load sample data into a view that we can use for training - ML.NET provides support for 
-// many different data types.
-var trainingDataView = mlContext.Data.ReadFromTextFile<HouseData>(dataPath, hasHeader: true, separatorChar: ',');
-
-// create the trainer we will use  - ML.NET supports different training methods
-// some trainers support automatic feature normalization and setting regularization
-// ML.NET lets you choose a number of different training alogorithms
-var trainer = mlContext.Regression.Trainers.FastTree(labelColumn: DefaultColumnNames.Label, featureColumn: DefaultColumnNames.Features);
-
-// Feature Selection - We can also select the features we want to use here, the names used 
-// correspond to the porperty names in HouseData
-string[] numericFeatureNames = { "Rooms", "BedRooms", "BedRoomsBsmt", "FullBath", "HalfBath", "Floors", "LotSize" };
-
-// We distinguish between features that are strings e.g. {"attached","detached","none")
-// garage types and Numeric faeature, since learning systems only work with numeric values we
-// need to convert the strings.
-// You can see that in the training pipeline we have applied OneHotEncoding to do this.
-// We have added area, since although in the data set its a number, it could be some other code.
-string[] categoryFeatureNames = { "GarageType", "Area" };
-
-// ML.NET combines transforms for data preparation and model training into a single pipeline, these are then applied 
-// to training data and the input data used to make predictions in your model.
-var trainingPipeline = mlContext.Transforms.Concatenate(NumFeatures, numericFeatureNames)
-    .Append(mlContext.Transforms.Categorical.OneHotEncoding("CatGarageType", inputColumnName: categoryFeatureNames[0]))
-    .Append(mlContext.Transforms.Categorical.OneHotEncoding("CatArea", inputColumnName: categoryFeatureNames[1]))
-    .Append(mlContext.Transforms.Concatenate(DefaultColumnNames.Features, NumFeatures, "CatGarageType", "CatArea"))
-    .Append(mlContext.Transforms.CopyColumns(DefaultColumnNames.Label, inputColumnName: nameof(HouseData.SoldPrice)))
-    .Append(trainer);
-
-```
 # Evaluation
 After training we need to evaluate our model using test data, this will indicate the size of the error between the predicted result and the actual results. Reducing the error will be part of an iterative process on a relatively small set of data to determine the best mix of features. There are different approaches supported by ML .NET We use [cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)) to estimate the variance of the model quality from one run to another, it and also eliminates the need to extract a separate test set for evaluation. We display the quality metrics to evaluate and get the model's accuracy metrics
 
 
 ![CodeSnip 3]({{ site.url }}/assets/MLNET_HousePriceSnip3.jpg)
 
- ```C#
-
-// We use cross-valdiation to estimate the variance of the model quality from one run to another,
-// it and also eliminates the need to extract a separate test set for evaluation.
-// We display the quality metrics in order to evaluate and get the model's accuracy metrics
-Console.WriteLine("= Cross-validating to get model's accuracy metrics=");
-var crossValidationResults = mlContext.Regression.CrossValidate(data: trainingDataView, estimator: trainingPipeline, numFolds: 6, labelColumn: DefaultColumnNames.Label);
-
-Helpers.PrintRegressionFoldsAverageMetrics(trainer.ToString(), crossValidationResults);
-
-// Train the model
-var model = trainingPipeline.Fit(trainingDataView);
-
-```
 
 We will look at two metrics:
 * L1 Loss - you need to minimise this, though if the input labels are not normalised, this can be quite high.
@@ -182,28 +111,7 @@ using (var file = File.OpenWrite(outputModelPath))
 Once you have tweaked the features and evaluate different training, you can then use the model to predict sales prices. I think this where the ML .NET framework shines because we can then use the cool tools in .Net to support different ways to use the model.
 
 ![CodeSnip 4]({{ site.url }}/assets/MLNET_HousePriceSnip4.jpg)
-```C#
- 
- public static void PredictSinglePrice(HouseData houseData, MLContext mlContext, string dataPath, string outputModelPath = "housePriceModel.zip")
-        {
-            //  Load the prediction model we saved earlier
-            ITransformer loadedModel;
-            using (var stream = new FileStream(outputModelPath, FileMode.Open, FileAccess.Read, FileShare.Read))
-            {
-                loadedModel = mlContext.Model.Load(stream);
-            }
 
-            // Creete a handy function based on our HouseData class 
-            // and a class to contain the result
-            var predictionFunction = loadedModel.CreatePredictionEngine<HouseData, HousePrediction>(mlContext);
-
-            // Predict the Sale price - TA DA
-            var prediction = predictionFunction.Predict(houseData);
-            Console.WriteLine($"Predicted SellPrice: {prediction.SoldPrice:0.####}"); 
-        }
-    }
-
-```
 For this type of ML application, a typical use would be to create a simple REST service running in a docker container deployed to Windows Azure. A web app written in javascript consumes the service to let people quickly see what a house should sell for.
 
 Using .Net Core we can run the backend on different hardware platforms, Visual Studio 2019, 2017 makes the creation, deployment, and management of a robust service quick and easy.
