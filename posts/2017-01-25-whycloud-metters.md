@@ -1,10 +1,5 @@
----
-layout: post
-title:  "Why the cloud matters to your development team"
-date:   2015-09-15 08:05:18 -0600
-categories: jekyll update
----
 
+# "Why the cloud matters to your development team"
 I was reading an interview about cloud based platforms with Adrian Cockroft written by Stefan Tikov in September edition of IEEE Computing Edge. What really struck a chord was when Cockroft says “The biggest change is when someone working at a company thinks, I need some machines to do something”
 
 The problem is that in companies with older operating models, to even get a single machine is a long and expensive process submitting tickets, arguing your case for the type and size of hardware with IT and procurement before finally some hardware arrives. In many larger companies the process takes months. Generally even then there is little control or access to configure things for optimum performance.

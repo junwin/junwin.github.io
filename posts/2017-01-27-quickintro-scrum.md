@@ -1,10 +1,5 @@
----
-layout: post
-title:  "A quick introduction to scrum"
-date:   2017-01-01 08:05:18 -0600
-categories: jekyll update
----
 
+# "A quick introduction to scrum"
 **Introduction**
 This is a quick introduction to scrum 
 
