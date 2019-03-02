@@ -1,11 +1,9 @@
 ---
-layout: post
 title:  "the futile search for an ideal canonical model"
 date:   2017-02-03 17:05:18 -0600
-categories: jekyll update
 ---
 
-The futile search for the canonical
+# The futile search for the canonical
 
 While reading [Microservice Architecture (Irakli Nadareishvili, Matt McLarty, Michael Amundsen, and Ronnie Mitra)](http://amzn.to/2k5lme4) they provide an interesting story about finding the ideal.
 
