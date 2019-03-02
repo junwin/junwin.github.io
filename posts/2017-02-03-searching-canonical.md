@@ -1,7 +1,3 @@
----
-title:  "the futile search for an ideal canonical model"
-date:   2017-02-03 17:05:18 -0600
----
 
 # The futile search for the canonical
 
