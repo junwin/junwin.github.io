@@ -1,5 +1,6 @@
 
 # A quick introduction to story mapping
+![cows in a field]({{ site.url }}/assets/setofpeople.jpg)
 
 ## A serious issue with agile is the lack of the “big picture.”
 Agile breaks larger requirements into smaller chunks or “stories.” These stories are quick to develop and enable users to get a rapid view of progress as the stories are completed in a series of short sprints.
