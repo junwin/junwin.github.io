@@ -1,4 +1,4 @@
-# Applying ML .NET to a regression problem
+# Predicting a house price using ML .NET
 ML .Net is an opensource cross-platform machine learning framework intended for .NET developers. Python(with routines are written in C++) is generally used to develop many ML libraries, e.g. TensorFlow, and this can add extra steps and hurdles when you need to tightly integrate ML components on the .Net platform. ML .Net provides a great set of tools to let you integrate machine learning applications using .NET – you can find out more about ML .NET [here](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet)
 
 ML .NET lets you develop a range of ML systems
