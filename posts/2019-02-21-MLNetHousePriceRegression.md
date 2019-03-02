@@ -133,6 +133,8 @@ var trainingPipeline = mlContext.Transforms.Concatenate(NumFeatures, numericFeat
 After training we need to evaluate our model using test data, this will indicate the size of the error between the predicted result and the actual results. Reducing the error will be part of an iterative process on a relatively small set of data to determine the best mix of features. There are different approaches supported by ML .NET We use [cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)) to estimate the variance of the model quality from one run to another, it and also eliminates the need to extract a separate test set for evaluation. We display the quality metrics to evaluate and get the model's accuracy metrics
 
 
+
+
  ```C#
 //  We use cross-valdiation to estimate the variance of the model quality from one run to another,
 // it and also eliminates the need to extract a separate test set for evaluation.
@@ -154,6 +156,8 @@ We will look at two metrics:
 
 The absolute loss is defined as  L1 = (1/m) * sum( abs( yi - y'i))
 
+You can find a desciption of the available [metrics here](https://docs.microsoft.com/en-us/nimbusml/concepts/metrics)
+
 Running the code as is yeilds an R-Sqaured of 0.608, we will want to improve this. A first step would be to start to experiment with the feature selection, perhaps to start with a reduced list of features *after* we have a clearer understanding then consider getting a wider set of data.
 
 
@@ -171,7 +175,7 @@ using (var file = File.OpenWrite(outputModelPath))
 # Load and predict house sale prices
 Once you have tweaked the features and evaluate different training, you can then use the model to predict sales prices. I think this where the ML .NET framework shines because we can then use the cool tools in .Net to support different ways to use the model.
 
-You can find a desciption of the [metrics used here](https://docs.microsoft.com/en-us/nimbusml/concepts/metrics)
+
 ```C#
  public static void PredictSinglePrice(HouseData houseData, MLContext mlContext, string dataPath, string outputModelPath = "housePriceModel.zip")
         {
@@ -201,4 +205,5 @@ For this type of ML application, a typical use would be to create a simple REST 
 Using .Net Core we can run the backend on different hardware platforms, Visual Studio 2019, 2017 makes the creation, deployment, and management of a robust service quick and easy.
 
 
-Find the code on [GitHub here](https://github.com/junwin/MLNetRegression)
+## Find the code in GitHub:
+[GitHub](https://github.com/junwin/MLNetRegression)
