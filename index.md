@@ -23,7 +23,7 @@
 
   [A quick introduction to scrum](https://junwin.github.io/posts/2017-01-27-quickintro-scrum.html)
 
-  [Why the cloud matters to your development](https://junwin.github.io/posts/2017-01-25-teamwhycloud-metters.html)
+  [Why the cloud matters to your development](https://junwin.github.io/posts/2017-01-25-whycloud-metters.html)
 
   [Thinking of scaling your scrum team? Think again.](https://junwin.github.io/posts/2017-01-24thinking-ofscaling-scrum.html)
 
