@@ -1,10 +1,4 @@
----
-layout: post
-title:  "Thinking of scaling your scrum team? Think again."
-date:   2015-09-11 08:05:18 -0600
-categories: jekyll update
----
-
+# Thinking of scaling your scrum team? Think again.
 Some processes like waterfall, have independent isolated phases of development (requirements, design, build and test) that are separate and can be scaled by adding resources into the separate phases.
 
 In contrast, scrum is “scale free.” It uses highly coordinated, cross function teams that grow like ecosystems do in a piecemeal and organic way. In such teams, adding people beyond a certain point will slow things down, mainly due to the greatly increased overhead of communication, synchronization and being assimilated by the team. An analogy would be trying to speed up the task of sorting a deck of cards by adding more people.
