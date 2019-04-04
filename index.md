@@ -7,7 +7,7 @@
   
   [Datawarehouse concepts](https://junwin.github.io/posts/2017-02-21-datawarehouse-concepts.html)
 
-  [the futile search for an ideal canonical model](https://junwin.github.io/posts/2017-02-03-searching-canonical.html)
+  [the futile search for an ideal canonical model](https://junwin.github.io/posts/2019-02-03-searching-canonical.html)
 
   [Writing style - George Orwell](https://junwin.github.io/posts/2017-01-27-writing-style.html)
 
