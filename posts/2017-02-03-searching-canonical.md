@@ -1,5 +1,6 @@
 
 # The futile search for the canonical
+![cityscape]({{ site.url }}/assets/L1070928FS.png)
 In [Microservice Architecture (Irakli Nadareishvili, Matt McLarty, Michael Amundsen, and Ronnie Mitra)](http://amzn.to/2k5lme4) the authors provide an interesting story about finding the ideal.
 
 In a US Air force study detailing pilot error, Lt. Gilbert Daniels attempted to identify what made up an average pilot. Based on some simple dimensions (height, chest size, etc.), and allowing a 30% margin around the numerical average(for all pilots the study) to consider an individual average. The study found that with ten measured dimensions and 4000 subjects not one person was average, the implication was that designing a cockpit for an average pilot would yield a design that fitted no one. 
