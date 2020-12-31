@@ -1,4 +1,4 @@
-MLS#,Stat,ClosedDate,YearClosed,SoldPr,Type,YearBuilt,Street#,StrName,Area,Zip,ASF,Rooms,FullBaths,HalfBaths,BsmtBth,Beds,BsmtBeds,GarageType,GarageSpaces,ParkingSpaces
+MLS#,Stat,ClosedDate,YearClosed,SoldPr,Type,YearBuilt,Street#,StrName,Area,Zip,Area,Rooms,FullBaths,HalfBaths,BsmtBth,Beds,BsmtBeds,GarageType,GarageSpaces,ParkingSpaces
 9575585,CLSD,7/5/2017,2017.00,156200,Condo,1925,9106,Lamon,76,60077,1200,5,2,0,No,2,0,None,0,0
 9882671,CLSD,5/18/2018,2018.00,205000,Condo,1927,8910,Skokie,76,60077,1528,5,1,0,No,2,0,Attached,1,0
 9605178,CLSD,9/1/2017,2017.00,195000,Condo,1927,8910,Skokie,76,60077,1528,6,1,0,No,2,0,Detached,1,0
