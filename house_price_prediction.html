@@ -13112,9 +13112,16 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://colab.research.google.com/github/junwin/junwin.github.io/blob/master/house_price_prediction.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Setting-up-a-regression-model-for-house-prices-using-Keras-and-Tensorflow">Setting up a regression model for house prices using Keras and Tensorflow<a class="anchor-link" href="#Setting-up-a-regression-model-for-house-prices-using-Keras-and-Tensorflow">&#182;</a></h1><p>To understand how the functionality fits into the typical workflow of data preparation, training the model and evaluating the fit using test data sets and using the model. I took a look at implementing a simple regression application to predict the sale price of a house given a simple set of features over about 4000 home sales.</p>
-<p>In the sample, we are going to take a look at a supervised learning problem of regression. A supervised learning task we train the model predicts a label's value from a set of features.</p>
-<p>The focus was on getting a small sample model up and running. 
+<p>In the sample, we are going to take a look at a supervised learning problem of regression. A supervised learning task we train the model predicts a label's value from a set of features. The focus was on getting a small sample model up and running. 
 We then experiment with the choice of feature and training algorithms to minimize prediction errors.</p>
 <p>We will run the code in Google's Colaboratory since this provides an excellent environment that allows access to GPU's, requires no configuration and enables sharing.</p>
 
@@ -13889,97 +13896,6 @@ mean squared error: 0.0014637162676081061  mean average error: 0.020143585279583
 </pre></div>
 
     </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Collecting ghp-import
-  Downloading https://files.pythonhosted.org/packages/ef/03/c674cf7f106b7be8719e0202537edd754040f786e9dc4799cd2c7d4d1743/ghp-import-1.0.0.tar.gz
-Requirement already satisfied: python-dateutil&gt;=2.8.1 in /usr/local/lib/python3.6/dist-packages (from ghp-import) (2.8.1)
-Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.6/dist-packages (from python-dateutil&gt;=2.8.1-&gt;ghp-import) (1.15.0)
-Building wheels for collected packages: ghp-import
-  Building wheel for ghp-import (setup.py) ... done
-  Created wheel for ghp-import: filename=ghp_import-1.0.0-cp36-none-any.whl size=10850 sha256=18baf0dc8224f02c081bbfbf3176296071fe5c212c216c5914edeaf5dc58ba27
-  Stored in directory: /root/.cache/pip/wheels/e3/e7/01/0895bc7c1860eead9cb27fbeab4e7887a872c49fcfe9c32a1c
-Successfully built ghp-import
-Installing collected packages: ghp-import
-Successfully installed ghp-import-1.0.0
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> pip install nbconvert
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Requirement already satisfied: nbconvert in /usr/local/lib/python3.6/dist-packages (5.6.1)
-Requirement already satisfied: pygments in /usr/local/lib/python3.6/dist-packages (from nbconvert) (2.6.1)
-Requirement already satisfied: entrypoints&gt;=0.2.2 in /usr/local/lib/python3.6/dist-packages (from nbconvert) (0.3)
-Requirement already satisfied: pandocfilters&gt;=1.4.1 in /usr/local/lib/python3.6/dist-packages (from nbconvert) (1.4.3)
-Requirement already satisfied: mistune&lt;2,&gt;=0.8.1 in /usr/local/lib/python3.6/dist-packages (from nbconvert) (0.8.4)
-Requirement already satisfied: nbformat&gt;=4.4 in /usr/local/lib/python3.6/dist-packages (from nbconvert) (5.0.8)
-Requirement already satisfied: testpath in /usr/local/lib/python3.6/dist-packages (from nbconvert) (0.4.4)
-Requirement already satisfied: traitlets&gt;=4.2 in /usr/local/lib/python3.6/dist-packages (from nbconvert) (4.3.3)
-Requirement already satisfied: jinja2&gt;=2.4 in /usr/local/lib/python3.6/dist-packages (from nbconvert) (2.11.2)
-Requirement already satisfied: jupyter-core in /usr/local/lib/python3.6/dist-packages (from nbconvert) (4.7.0)
-Requirement already satisfied: defusedxml in /usr/local/lib/python3.6/dist-packages (from nbconvert) (0.6.0)
-Requirement already satisfied: bleach in /usr/local/lib/python3.6/dist-packages (from nbconvert) (3.2.1)
-Requirement already satisfied: ipython-genutils in /usr/local/lib/python3.6/dist-packages (from nbformat&gt;=4.4-&gt;nbconvert) (0.2.0)
-Requirement already satisfied: jsonschema!=2.5.0,&gt;=2.4 in /usr/local/lib/python3.6/dist-packages (from nbformat&gt;=4.4-&gt;nbconvert) (2.6.0)
-Requirement already satisfied: six in /usr/local/lib/python3.6/dist-packages (from traitlets&gt;=4.2-&gt;nbconvert) (1.15.0)
-Requirement already satisfied: decorator in /usr/local/lib/python3.6/dist-packages (from traitlets&gt;=4.2-&gt;nbconvert) (4.4.2)
-Requirement already satisfied: MarkupSafe&gt;=0.23 in /usr/local/lib/python3.6/dist-packages (from jinja2&gt;=2.4-&gt;nbconvert) (1.1.1)
-Requirement already satisfied: packaging in /usr/local/lib/python3.6/dist-packages (from bleach-&gt;nbconvert) (20.8)
-Requirement already satisfied: webencodings in /usr/local/lib/python3.6/dist-packages (from bleach-&gt;nbconvert) (0.5.1)
-Requirement already satisfied: pyparsing&gt;=2.0.2 in /usr/local/lib/python3.6/dist-packages (from packaging-&gt;bleach-&gt;nbconvert) (2.4.7)
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
