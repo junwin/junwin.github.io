@@ -1,6 +1,6 @@
 ## John Unwin's ramblings
-
-
+  [Setting up a regression model for house prices using Keras and Tensorflow](https://junwin.github.io/posts/house_price_prediction.html)
+  
   [Using ML.NET to predict house prices](https://junwin.github.io/posts/2019-02-21-MLNetHousePriceRegression.html)
   
   [Working out a strategy for error handling](https://junwin.github.io/posts/2017-02-22-errorhandling-ideas.html)
