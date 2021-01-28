@@ -1,4 +1,4 @@
-<a href="https://colab.research.google.com/github/junwin/colab/blob/main/housepPricePrediction2.ipynb" target="_parent"><img src="https://junwin.github.io/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/junwin/colab/blob/main/housepPricePrediction2.ipynb" target="_parent"><img src="https://junwin.github.io/assets/colab-badge.png" alt="Open In Colab"/></a>
 
 
 
