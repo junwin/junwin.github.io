@@ -1,8 +1,3 @@
-<a href="https://colab.research.google.com/github/junwin/colab/blob/main/housepPricePrediction2.ipynb" target="_parent"><img src="https://junwin.github.io/assets/colab.png" alt="Open In Colab"/></a>
-
-
-
-
 # Using Tensorflow and Keras to predict house prices using a .csv file of house data
 
 ![Alt text](https://junwin.github.io/assets/Z01.jpeg)
@@ -21,6 +16,8 @@ The topics covered are:
 * Storing and reloading models
 
 
+
+<a href="https://colab.research.google.com/github/junwin/colab/blob/main/housepPricePrediction2.ipynb" target="_parent"><img src="https://junwin.github.io/assets/colab.png" alt="Open In Colab"/></a>
 
 
 ## Acknowledgement 
