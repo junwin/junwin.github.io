@@ -1,38 +1,26 @@
-## John Unwin's ramblings
-  [Setting up a regression model for house prices using Keras and Tensorflow](https://junwin.github.io/posts/2021-01-04-house_price_prediction.html)
-  
-  [Using ML.NET to predict house prices](https://junwin.github.io/posts/2019-02-21-MLNetHousePriceRegression.html)
-  
-  [Working out a strategy for error handling](https://junwin.github.io/posts/2017-02-22-errorhandling-ideas.html)
-  
-  [Datawarehouse concepts](https://junwin.github.io/posts/2017-02-21-datawarehouse-concepts.html)
+---
+layout: default
+title: John Unwin's Ramblings
+---
 
-  [the futile search for an ideal canonical model](https://junwin.github.io/posts/2019-02-03-searching-canonical.html)
+## Welcome
 
-  [Writing style - George Orwell](https://junwin.github.io/posts/2017-01-27-writing-style.html)
+This is a personal collection of essays, notes, and thoughts on software, systems, and the occasional philosophical detour.
 
-  [A quick introduction to story mapping](https://junwin.github.io/posts/2017-01-27-storymapping.html)
+Here are some of the latest posts:
 
-  [testing notes](https://junwin.github.io/posts/2017-01-25-testing.html)
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <small>({{ post.date | date: "%Y-%m-%d" }})</small>
+    </li>
+  {% endfor %}
+</ul>
 
-  [SOA, ESB and event driven architectures -  oh my!!](https://junwin.github.io/posts/2017-01-25-designDecisions.html)
+---
 
-  [Pets, Cattle and the Chaos Monkey – why your pets need to stay away from the datacenter](https://junwin.github.io/posts/2017-01-24-pets-cattle.html)
+### Other links
 
-  [Continuous Delivery](https://junwin.github.io/posts/2017-01-24-continuous-delivery.html)
-
-  [A quick introduction to scrum](https://junwin.github.io/posts/2017-01-27-quickintro-scrum.html)
-
-  [Why the cloud matters to your development](https://junwin.github.io/posts/2017-01-25-whycloud-metters.html)
-
-  [Thinking of scaling your scrum team? Think again.](https://junwin.github.io/posts/2017-01-24thinking-ofscaling-scrum.html)
-
-  [Need to create value quickly – then get rid of half of your features](https://junwin.github.io/posts/2017-01-01-25-get-rid-of-features.html)
-
-  [Notes from the book called Simply Brilliant by Fergus O'Connell](https://junwin.github.io/posts/2017-01-27-simplybrilliant.html)
-
-
-          
-  [Github](https://github.com/junwin)
-            
-  [Twitter](https://twitter.com/junwin)
+- [GitHub Profile](https://github.com/junwin)
+- [Twitter](https://twitter.com/junwin)
