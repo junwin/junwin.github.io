@@ -18,7 +18,7 @@ Continuous Delivery
 * Deploy Service
 * Run Service tests
 
-**Jez Humble - 3 questions**
+**Jez Humble's - 3 questions**
 
 * Do you check into the mainline each day? This includes integrating short lived branches to the main.
 * Do you have a suite of tests to validate your changes?
