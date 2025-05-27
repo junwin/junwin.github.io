@@ -9,7 +9,7 @@ excerpt: "A restored image and reflection on a traditional Chinese mural in Pena
 ---
 
 # Legacy and Learning  
-*Ink painting from Penang, Malaysia – restored photograph*
+*Ink painting from Penang, Malaysia*
 
 In this mural, an elderly farmer stands barefoot by his plow, guiding a water buffalo with a young boy perched atop. The child, clutching a text and reaching toward a drifting straw hat, appears animated—caught between study and play. The elder, gaze raised, follows the boy’s gesture, his demeanor a blend of patience and quiet joy. The buffalo, steady and alert, completes the trio, symbolizing harmony between human effort, nature, and transmission of wisdom.
 
