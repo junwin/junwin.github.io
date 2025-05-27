@@ -4,7 +4,7 @@ title: "Legacy and Learning: A Penang Temple Mural"
 date: 2025-05-27 10:00:00 -0500
 categories: [heritage, art, penang]
 tags: [Confucianism, ink painting, mural, Malaysia, calligraphy]
-image: /assets/images/penang-mural-restored.jpg
+image: /assets/images/R0004937.jpg
 excerpt: "A restored image and reflection on a traditional Chinese mural in Penang, celebrating the enduring values of study, labor, and lineage."
 ---
 
