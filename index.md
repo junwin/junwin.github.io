@@ -20,7 +20,8 @@ I'm John Unwin — I write about development, systems, creativity, and the occas
   {% endfor %}
 </ul>
 
-[See all posts →](/)
+[See all posts →](/posts)
+
 
 ---
 

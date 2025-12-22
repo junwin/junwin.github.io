@@ -1,3 +1,18 @@
 theme: jekyll-theme-minimal
 title: "John Unwin"
 author: "John Unwin"
+description: "Notes on travel, photography, and mindful living"
+show_downloads: false
+
+# Where to find posts
+collections:
+  posts:
+    output: true
+
+# Permalink style (optional)
+permalink: /:year/:month/:day/:title/
+
+# Plugins that GitHub Pages supports
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
