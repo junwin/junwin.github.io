@@ -25,28 +25,29 @@ I'm John Unwin — I write about development, systems, creativity, and the occas
 
 ---
 
-## 📷 Featured Photography & Zen Writing
+## 📷 Whats on my mind
 
-- 🌿 [Walking Mindfully: Photography and Simplicity](https://johnunwinphotography.blog/2024/08/10/walking-mindfully/)
-- 📸 [On Shadows and Light](https://johnunwinphotography.blog/2023/12/01/on-shadows-and-light/)
-- 🧘 [Breath and Image: A Practice](https://johnunwinphotography.blog/2023/11/11/breath-and-image/)
-
-[Visit my full photo blog →](https://johnunwinphotography.blog)
+- 🏯 [Legacy and Learning: A Penang Temple Mural](/2025/05/27/penang_mural_legacy_and_learning/)
+- ✍️ [Writing style - George Orwell](/2017/01/27/writing-style/)
 
 ---
 
-## 🎨 Visual Work
+## 📷 Projects
 
-- 🖼 [Behance Portfolio](https://www.behance.net/junwin)
-- ✒️ [Adobe Portfolio Projects](https://junwin.myportfolio.com)
+- 🏢 [buildings in Reykjavik](/2026/07/13/buildings-in-reykjavik/)
+- 🎨 [Hubbard Street Murals](/2026/07/11/hubbard-street-murals/)
+- 🏚️ [isolation 2020](/2026/07/10/isolation-2020/)
+- 🏗️ [abandoned corporate spaces unveiled](/2026/07/09/abandoned-corporate-spaces-unveiled/)
 
 ---
 
 ## 🌐 Elsewhere
 
-- 💻 [GitHub](https://github.com/junwin)
-- 📘 [Medium](https://medium.com/@junwin)
-- 🐦 [Twitter/X](https://twitter.com/junwin)
+- 🐘 [Mastodon](https://mastodon.social/@jdunwin)
+- 📷 [Pixelfed](https://pixelfed.social/junwin)
+- 🦋 [Bluesky](https://bsky.app/profile/junwin57.bsky.social)
+- 📝 [Tumblr](https://www.tumblr.com/blog/johndunwin)
+- 🔗 [unwin.com](https://www.unwin.com)
 
 ---
 
