@@ -29,7 +29,7 @@ After producing some shots in monochrome, I decided to reshoot the set in color 
 ### Original notes
 A mural depicting a walrus is painted on a wal
 
-### Description for the visually challenged
+### Image description
 A mural depicting a walrus is painted on a wall. The walrus is primarily blue with white accents and is positioned against a dark background. Green leaves from a nearby plant partially obscure the top of the mural.
 
 ### Hashtags
@@ -39,7 +39,7 @@ places usa illinois chicago hubbardstreet photography photo genre mural street s
 
 ![woodpecker](/assets/images/IMG_2111.jpg)
 
-### Description for the visually challenged
+### Image description
 The image features a mural of a woodpecker on a wall. The woodpecker has a red head, black and white body, and is depicted in profile. There is a vertical crack running through the mural, and the background is dark with some blue elements.
 
 ### Hashtags
@@ -49,7 +49,7 @@ places usa illinois chicago hubbardstreet photography photo genre mural street s
 
 ![leaping frog](/assets/images/IMG_2113.jpg)
 
-### Description for the visually challenged
+### Image description
 A colorful mural of a frog is painted on a dark wall. The frog features green, yellow, and purple colors, with visible details like its limbs and webbed feet. The wall shows signs of wear and decay, with cracks and dirt present around the mural.
 
 ### Hashtags
@@ -59,7 +59,7 @@ places usa illinois chicago hubbardstreet photography photo genre mural street s
 
 ![reptile](/assets/images/IMG_2115.jpg)
 
-### Description for the visually challenged
+### Image description
 The image shows a mural of a large, stylized reptile's face, featuring blue and green tones. The reptile has sharp teeth and a textured skin pattern. The mural is partially obscured by a vertical crack in the wall, with some dirt and grime visible around the edges.
 
 ### Hashtags
@@ -69,7 +69,7 @@ places usa illinois chicago hubbardstreet photography photo genre mural street s
 
 ![bird of prey](/assets/images/IMG_2116.jpg)
 
-### Description for the visually challenged
+### Image description
 A mural of a bird, possibly a falcon, is depicted on a textured wall. The bird has a light blue head, a yellow beak, and a body with intricate patterns in shades of beige and blue. The background is dark with visible wear and peeling paint.
 
 ### Hashtags
@@ -79,7 +79,7 @@ places usa illinois chicago hubbardstreet photography photo genre mural street s
 
 ![butterfly](/assets/images/IMG_2119.jpg)
 
-### Description for the visually challenged
+### Image description
 The image features a mural of a butterfly with predominantly black wings adorned with yellow spots and blue outlines. The background is a mix of blue and textured surfaces, with hints of pink and green elements nearby. The mural appears to be weathered and partially obscured by dirt.
 
 ### Hashtags
@@ -89,7 +89,7 @@ places usa illinois chicago hubbardstreet photography photo genre mural street s
 
 ![busy bee](/assets/images/IMG_2121.jpg)
 
-### Description for the visually challenged
+### Image description
 A colorful mural depicting a stylized insect, possibly a bee, is partially obscured by green foliage. The insect features blue, yellow, and black colors, with a textured background of pink and gray. The foreground includes various green leaves and plants.
 
 ### Hashtags
@@ -99,7 +99,7 @@ places usa illinois chicago hubbardstreet photography photo genre mural street s
 
 ![elephant](/assets/images/IMG_2130.jpg)
 
-### Description for the visually challenged
+### Image description
 The image shows a mural of an elephant's head on a textured, dark background. The elephant is depicted in shades of gray with white tusks and hints of color on its body. The surface is worn and shows signs of aging and dirt.
 
 ### Hashtags
@@ -109,7 +109,7 @@ places usa illinois chicago hubbardstreet photography photo genre mural street s
 
 ![rhinoceros](/assets/images/IMG_2140.jpg)
 
-### Description for the visually challenged
+### Image description
 The image features a mural of a rhinoceros, predominantly in shades of gray and white, set against a dark background. The mural shows the rhinoceros's head and part of its body, with visible texture and wear on the surface. In the foreground, there are green leaves partially obscuring the bottom right corner.
 
 ### Hashtags
@@ -119,7 +119,7 @@ places usa illinois chicago hubbardstreet photography photo genre mural street s
 
 ![a couple of ducks](/assets/images/IMG_2146.jpg)
 
-### Description for the visually challenged
+### Image description
 A mural depicting two ducks is visible on a weathered wall. One duck is shown in profile with a green head and a light-colored body, while the other duck appears to be resting with a grayish body. The background features muted colors and textures, with visible cracks in the surface.
 
 ### Hashtags

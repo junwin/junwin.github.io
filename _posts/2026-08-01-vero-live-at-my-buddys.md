@@ -16,7 +16,7 @@ The set blended theatrical presence with genuine musicality — a cabaret spirit
 
 ![On Stage](/assets/images/R0007440.jpg)
 
-### Description for the visually challenged
+### Image description
 
 A performer stands on stage holding a ukulele. The individual wears a floral-patterned shirt and a black jacket. The background is dark, with a sign that reads "My Buddy's" partially visible.
 
@@ -28,7 +28,7 @@ family vero photography photo genre theatrical cabaret performer ukulele stage m
 
 ![Microphone and Ukulele](/assets/images/R0007441.jpg)
 
-### Description for the visually challenged
+### Image description
 
 A person stands on stage holding a microphone in one hand and a ukulele in the other, captured in black and white. They wear a floral-patterned jacket over a dark shirt. The background is dimly lit with posters visible.
 
@@ -40,7 +40,7 @@ family vero photography photo genre theatrical cabaret performance music ukulele
 
 ![Focused](/assets/images/R0007442.jpg)
 
-### Description for the visually challenged
+### Image description
 
 A person stands on stage holding a ukulele and a microphone. They wear a black jacket with colorful floral patterns and have a peace symbol tattoo on their hand. The background is dark with a faint logo visible.
 
@@ -52,7 +52,7 @@ family vero photography photo genre theatrical cabaret performance music ukulele
 
 ![Vero Performing](/assets/images/R0007444.jpg)
 
-### Description for the visually challenged
+### Image description
 
 A person with shoulder-length hair and makeup is performing on stage, holding a ukulele and singing into a microphone. They wear a floral-patterned jacket over a black outfit. A music stand with a notepad is in the background. The setting is a small venue with wooden walls.
 
