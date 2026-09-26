@@ -52,3 +52,9 @@ body{
 
 /* Utility */
 .small{font-size:.9rem;color:var(--muted)}
+
+/* Keep post images inside the viewport while preserving their aspect ratio. */
+.site-main img{
+  max-width:100%;
+  height:auto;
+}
