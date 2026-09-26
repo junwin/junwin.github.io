@@ -8,7 +8,11 @@ permalink: /projects/
 
 <p>Project pages and longer engagements. This list shows posts whose categories or tags include "project" or "projects".</p>
 
-{% assign projects = site.posts | where_exp: "p", "p.categories contains 'projects' or p.categories contains 'project' or p.tags contains 'projects' or p.tags contains 'project'" %}
+{% assign projects_category = site.posts | where_exp: "p", "p.categories contains 'projects'" %}
+{% assign project_category = site.posts | where_exp: "p", "p.categories contains 'project'" %}
+{% assign projects_tag = site.posts | where_exp: "p", "p.tags contains 'projects'" %}
+{% assign project_tag = site.posts | where_exp: "p", "p.tags contains 'project'" %}
+{% assign projects = projects_category | concat: project_category | concat: projects_tag | concat: project_tag | uniq %}
 
 {% if projects.size > 0 %}
   <ul class="list-compact">
