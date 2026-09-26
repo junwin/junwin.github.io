@@ -3,52 +3,46 @@ layout: default
 title: John Unwin
 ---
 
-# Welcome
+<section class="hero">
+  <div class="container">
+    <div class="intro">
+      <h1>{{ site.title }}</h1>
+      <p class="small">{{ site.description }}</p>
+      <p>I write about development, systems, creativity, and the occasional photograph. Use the links above to get to Photography, Projects, or Writing.</p>
+    </div>
+  </div>
+</section>
 
-I'm John Unwin — I write about development, systems, creativity, and the occasional insight from behind a lens or a breath.
+<section>
+  <div class="container">
+    <h2>Featured</h2>
+    {% assign featured = site.posts | where_exp: "p", "p.image" %}
+    {% if featured.size > 0 %}
+      <div class="post-grid">
+        {% for post in featured limit:6 %}
+          <article class="card">
+            <a href="{{ post.url | relative_url }}">
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+              <h3>{{ post.title }}</h3>
+            </a>
+          </article>
+        {% endfor %}
+      </div>
+      <p class="small"><a href="{{ '/photography/' | relative_url }}">See more photography →</a></p>
+    {% else %}
+      <p>No featured images found.</p>
+    {% endif %}
+  </div>
+</section>
 
----
-
-## ✍️ Latest Blog Posts
-
-<ul>
-  {% for post in site.posts limit:5 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>  
-      <small>({{ post.date | date: "%Y-%m-%d" }})</small>
-    </li>
-  {% endfor %}
-</ul>
-
-[See all posts →](/posts)
-
-
----
-
-## 📷 Whats on my mind
-
-- 🏯 [Legacy and Learning: A Penang Temple Mural](/2025/05/27/penang_mural_legacy_and_learning/)
-- ✍️ [Writing style - George Orwell](/2017/01/27/writing-style/)
-
----
-
-## 📷 Projects
-
-- 🏢 [buildings in Reykjavik](/2026/07/13/buildings-in-reykjavik/)
-- 🎨 [Hubbard Street Murals](/2026/07/11/hubbard-street-murals/)
-- 🏚️ [isolation 2020](/2026/07/10/isolation-2020/)
-- 🏗️ [abandoned corporate spaces unveiled](/2026/07/09/abandoned-corporate-spaces-unveiled/)
-
----
-
-## 🌐 Elsewhere
-
-- 🐘 [Mastodon](https://mastodon.social/@jdunwin)
-- 📷 [Pixelfed](https://pixelfed.social/junwin)
-- 🦋 [Bluesky](https://bsky.app/profile/junwin57.bsky.social)
-- 📝 [Tumblr](https://www.tumblr.com/blog/johndunwin)
-- 🔗 [unwin.com](https://www.unwin.com)
-
----
-
-_This site is built with [Jekyll](https://jekyllrb.com) and hosted freely on [GitHub Pages](https://pages.github.com)._
+<section>
+  <div class="container">
+    <h2>Latest writing</h2>
+    <ul class="list-compact">
+      {% for post in site.posts limit:6 %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <small class="small">({{ post.date | date: "%Y-%m-%d" }})</small></li>
+      {% endfor %}
+    </ul>
+    <p class="small"><a href="{{ '/writing/' | relative_url }}">All writing →</a></p>
+  </div>
+</section>
