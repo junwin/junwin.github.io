@@ -28,7 +28,7 @@ body{
 }
 
 /* Main content */
-.site-main{padding:1rem 0}
+.site-main{padding:1rem}
 
 /* Hero */
 .hero{display:flex;align-items:center;gap:1rem;padding:1rem 0}
