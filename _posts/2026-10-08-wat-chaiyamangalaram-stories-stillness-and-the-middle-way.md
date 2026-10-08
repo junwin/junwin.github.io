@@ -4,7 +4,7 @@ title: "Wat Chaiyamangalaram: Stories, Stillness and the Middle Way"
 date: 2026-10-08 11:43:01 -0500
 categories: [photography, travel, reflections]
 tags: [Wat Chaiyamangalaram, Penang, Malaysia, Buddhism, Buddhist art, temple, Middle Way, reclining Buddha, murals, photography]
-image: /assets/images/wat-chaiyamangalaram/dsc01897.jpg
+image: /assets/images/wat-chaiyamangalaram/dsc01875.jpg
 excerpt: "A visit to Wat Chaiyamangalaram in Penang: Buddhist stories, a monumental reclining Buddha, and a reflection on stillness, attention and the Middle Way."
 ---
 
