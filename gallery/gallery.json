@@ -12,12 +12,20 @@
     "alt": "A staircase leads upward in a dimly lit space, with stone steps and walls. Arched windows and columns are visible on either side, creating a gothic architectural style. A doorway at the top of the stairs is partially illuminated, while the background remains dark."
   },
   {
+    "file": "/assets/images/R0004824.jpg",
+    "alt": "A large ship is silhouetted against a dark, cloudy sky over water. The scene is monochrome, with shades of black and gray. In the background, several smaller vessels are visible, and faint lights can be seen on the horizon."
+  },
+  {
     "file": "/assets/images/R0003679.jpg",
     "alt": "A vast expanse of turbulent ocean water under a cloudy sky. The scene is dominated by dark blue waves, with areas of white foam visible. A thick mist or snow obscures part of the horizon, creating a sense of depth and atmosphere."
   },
   {
     "file": "/assets/images/DSC03036.jpg",
     "alt": "A black and white photograph shows a valley framed by mountains on either side. A winding dirt path runs through the foreground, leading toward the background where a river is visible. The sky is overcast with clouds, creating a dramatic atmosphere."
+  },
+  {
+    "file": "/assets/images/A67A6316.jpg",
+    "alt": "A water lily with soft pink petals and a yellow center floats on a dark pond. The lily is surrounded by large green leaves. The composition is top-down, with the flower prominently centered against the contrasting dark water."
   },
   {
     "file": "/assets/images/R0007077.jpg",
@@ -38,6 +46,10 @@
   {
     "file": "/assets/images/A67A6358.jpg",
     "alt": "A black and white image of a tree leaning to the left, with a dense canopy and twisted branches. The tree is situated on a grassy hill, surrounded by low vegetation. The background features a light sky, creating a high contrast with the dark silhouette of the tree."
+  },
+  {
+    "file": "/assets/images/img217-2.jpg",
+    "alt": "The image shows a close-up view of a curved metallic surface, with overlapping panels reflecting light. The background features a dark sky with some clouds. The composition emphasizes the smooth lines and textures of the metal."
   },
   {
     "file": "/assets/images/A67A5752.jpg",
@@ -92,12 +104,12 @@
     "alt": "A tranquil lake scene at sunrise, featuring a wooden dock extending into the water. The sky is filled with vibrant pink and purple clouds reflecting on the calm surface of the lake. In the background, silhouettes of trees and buildings are visible along the shoreline."
   },
   {
-    "file": "/assets/images/R0003664.jpg",
-    "alt": "A view of the North Atlantic Ocean with dark, turbulent waves. The sky is overcast with gray clouds, and there is a hint of lighter clouds near the horizon. The foreground features choppy water with white foam at the crests of the waves."
-  },
-  {
     "file": "/assets/images/R0000320.jpg",
     "alt": "A basketball sits on a wet green court, partially covered by a white line. A shadow of a person is visible on the court, extending towards the ball. The basketball is red, white, and blue, with visible wear and water droplets on its surface."
+  },
+  {
+    "file": "/assets/images/R0003664.jpg",
+    "alt": "A view of the North Atlantic Ocean with dark, turbulent waves. The sky is overcast with gray clouds, and there is a hint of lighter clouds near the horizon. The foreground features choppy water with white foam at the crests of the waves."
   },
   {
     "file": "/assets/images/r0002674.jpg",
@@ -116,12 +128,12 @@
     "alt": "A dense forest scene filled with various shades of green foliage. Tall trees with twisting branches are visible in the background, while thick bushes and undergrowth occupy the foreground. The overall atmosphere appears lush and vibrant."
   },
   {
-    "file": "/assets/images/R0007272.jpg",
-    "alt": "An open door is visible in the foreground, framed by ornate architecture. Bright sunlight streams through the doorway, illuminating the dark interior. Outside the door, a tree and a balcony railing are partially visible."
-  },
-  {
     "file": "/assets/images/A67A6316_1.jpg",
     "alt": "A pink water lily with a yellow center is situated on a dark pond surface. The lily is surrounded by broad green leaves. The composition is centered, with the flower prominently displayed against the dark water background."
+  },
+  {
+    "file": "/assets/images/R0007272.jpg",
+    "alt": "An open door is visible in the foreground, framed by ornate architecture. Bright sunlight streams through the doorway, illuminating the dark interior. Outside the door, a tree and a balcony railing are partially visible."
   },
   {
     "file": "/assets/images/DSC03165.jpg",
@@ -142,17 +154,5 @@
   {
     "file": "/assets/images/R0007030.jpg",
     "alt": "A steep, rocky cliff face is prominently displayed, with a dark, textured surface. The top of the cliff is lined with greenery against a cloudy sky. In the foreground, there is a dark shrubbery, and the image is in black and white."
-  },
-  {
-    "file": "/assets/images/belly1b.jpg",
-    "alt": "A dimly lit alleyway under an elevated structure. Two figures walk away from the camera, one with long hair and a bag, the other wearing a plaid shirt and a backpack. The walls are covered in graffiti, and there are faint reflections on glass surfaces nearby."
-  },
-  {
-    "file": "/assets/images/R0007234.jpg",
-    "alt": "A group of sheep is grazing in a meadow. The sheep are mostly white with some having brown patches. In the background, there are trees and a clear sky, with tall grass in the foreground."
-  },
-  {
-    "file": "/assets/images/R0006951.jpg",
-    "alt": "The image features a dense arrangement of willow branches and leaves. The composition is monochrome, highlighting the textures and shapes of the leaves and stems. Some small flowers are visible among the foliage."
   }
 ]
