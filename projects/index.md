@@ -33,8 +33,8 @@ retrieval.
 memory and retrieval candidates, applying per-section token budgets,
 relevance selection and deduplication.
 
-**galet-tools** — an MCP server exposing the galet stack as tools.
-(private)
+**[galet-tools](https://github.com/junwin/galet-tools)** — an MCP server
+exposing the galet stack as tools.
 
 **This site** — a Jekyll/GitHub Pages site I publish to from the command
 line, with an automated photo gallery that ranks and thumbnails itself.
