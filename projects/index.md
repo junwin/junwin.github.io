@@ -6,20 +6,35 @@ permalink: /projects/
 
 <h1>Projects</h1>
 
-<p>Project pages and longer engagements. This list shows posts whose categories or tags include "project" or "projects".</p>
+**[image_description](https://github.com/junwin/image_description)** — a
+Python toolkit for my photography workflow: it generates descriptions and
+alt text for images, publishes them to Mastodon, Pixelfed, Tumblr and
+Bluesky, tracks engagement, and promotes the best photos to this site's
+gallery.
 
-{% assign projects_category = site.posts | where_exp: "p", "p.categories contains 'projects'" %}
-{% assign project_category = site.posts | where_exp: "p", "p.categories contains 'project'" %}
-{% assign projects_tag = site.posts | where_exp: "p", "p.tags contains 'projects'" %}
-{% assign project_tag = site.posts | where_exp: "p", "p.tags contains 'project'" %}
-{% assign projects = projects_category | concat: project_category | concat: projects_tag | concat: project_tag | uniq %}
+## The galet stack
 
-{% if projects.size > 0 %}
-  <ul class="list-compact">
-    {% for post in projects %}
-      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <small class="small">({{ post.date | date: "%Y-%m-%d" }})</small></li>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>No project-tagged posts found. You can navigate to the <a href="{{ '/photography/' | relative_url }}">Photography</a> or <a href="{{ '/writing/' | relative_url }}">Writing</a> pages.</p>
-{% endif %}
+A set of provider-neutral Python packages for building LLM agent
+applications — split by responsibility so each piece stays usable on its
+own:
+
+**[galet](https://github.com/junwin/galet)** — provider-agnostic LLM,
+embedding and image-generation layer: chat and tool calling across OpenAI,
+DeepSeek, Gemini, Mistral and Ollama, declarative model routing, and a
+model catalog that resolves by capability.
+
+**[galet-memory](https://github.com/junwin/galet-memory)** — the memory
+layer for agent applications: episodic, semantic, procedural and working
+memory contracts, with reusable SQLite and vector-backed persistence and
+retrieval.
+
+**[galet-prompt-builder](https://github.com/junwin/galet-prompt-builder)**
+— prompt compilation: it assembles bounded prompts from instructions,
+memory and retrieval candidates, applying per-section token budgets,
+relevance selection and deduplication.
+
+**[galet-tools](https://github.com/junwin/galet-tools)** — an MCP server
+exposing the galet stack as tools.
+
+**This site** — a Jekyll/GitHub Pages site I publish to from the command
+line, with an automated photo gallery that ranks and thumbnails itself.

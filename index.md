@@ -15,23 +15,11 @@ title: John Unwin
 
 <section>
   <div class="container">
-    <h2>Featured</h2>
-    {% assign featured = site.posts | where_exp: "p", "p.image" %}
-    {% if featured.size > 0 %}
-      <div class="post-grid">
-        {% for post in featured limit:6 %}
-          <article class="card">
-            <a href="{{ post.url | relative_url }}">
-              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-              <h3>{{ post.title }}</h3>
-            </a>
-          </article>
-        {% endfor %}
-      </div>
-      <p class="small"><a href="{{ '/photography/' | relative_url }}">See more photography →</a></p>
-    {% else %}
-      <p>No featured images found.</p>
-    {% endif %}
+    <h2>Photography</h2>
+    <div id="photo-grid" class="photo-grid" data-json="{{ '/gallery/gallery.json' | relative_url }}" data-limit="8"></div>
+    <p class="small"><a href="{{ '/gallery/' | relative_url }}">All photos →</a></p>
+    <link rel="stylesheet" href="{{ '/assets/css/gallery.css' | relative_url }}">
+    <script src="{{ '/assets/js/gallery.js' | relative_url }}" defer></script>
   </div>
 </section>
 
