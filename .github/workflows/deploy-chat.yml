@@ -4,7 +4,7 @@ name: Deploy gptChum
 on:
   workflow_dispatch:
   push:
-    branches: [master]
+    branches: [main]
     paths:
       - .github/workflows/deploy-chat.yml
 
@@ -60,7 +60,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git commit -m "Deploy gptChum ${source_sha}"
-          git push origin HEAD:master
+          git push origin HEAD:main
 
       # A GITHUB_TOKEN push does not trigger branch-based Pages publishing.
       - name: Request GitHub Pages build

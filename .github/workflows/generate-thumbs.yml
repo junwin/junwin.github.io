@@ -2,7 +2,7 @@ name: Generate image thumbnails
 
 on:
   push:
-    branches: [master]
+    branches: [main]
     paths:
       - 'assets/images/**'
       - '.github/workflows/generate-thumbs.yml'
