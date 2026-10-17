@@ -2,7 +2,7 @@
 layout: post
 title: "Breathing in, my breath grows deep – breathing out, my breath goes slow"
 date: 2023-06-23 18:57:30 +0000
-categories: ["reflections"]
+categories: ["mindfulness"]
 tags: ["Conscious Breathing", "Guided Meditation", "Impermanence", "Interconnectedness", "Meditation", "Mental Health", "Mindful Breathing", "Mindfulness", "Plum Village", "Present Moment", "Stress Reduction", "Thich Nhat Hanh", "Wellness", "Zen Buddhism"]
 image: /assets/images/a67a8920-2.jpg
 excerpt: "“Explore the profound mindfulness practice of ‘Breathing in, my breath grows deep; breathing out, my breath goes slow.’ Inspired by Thich Nhat Hanh’s teachings, this simple yet transformative exercise unites body and mind, cultivates calm, and deepens our understanding of life’s impermanence and interconnectedness. A gateway to the richness of the present moment is but a breath away.”"

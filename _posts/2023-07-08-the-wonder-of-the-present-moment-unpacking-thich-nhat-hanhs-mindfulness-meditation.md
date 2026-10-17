@@ -2,7 +2,7 @@
 layout: post
 title: "The Wonder of the Present Moment: Unpacking Thich Nhat Hanh’s Mindfulness Meditation"
 date: 2023-07-08 16:45:23 +0000
-categories: ["reflections"]
+categories: ["mindfulness"]
 tags: ["Aimlessness", "Buddhism", "Enlightenment", "InnerPeace", "Interconnectedness", "Meditation", "MindfulBreathing", "MindfulLiving", "Mindfulness", "PresentMoment", "Spirituality", "ThichNhatHanh", "Wonder", "Zen"]
 image: /assets/images/r0002291.jpg
 excerpt: "Thich Nhat Hanh, a revered Zen Buddhist monk, teaches the practice of mindful breathing, encouraging us to dwell in the present moment and recognize its innate wonder. His meditative phrase “Dwelling in the present moment, I know it is a wonderful moment,” encapsulates the essence of mindfulness and the joy of being present. Let’s explore […]"

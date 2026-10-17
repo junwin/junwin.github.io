@@ -2,7 +2,7 @@
 layout: post
 title: "Breathing in Calm, Breathing out Ease: Insights from Thich Nhat Hanh’s Mindfulness Meditation"
 date: 2023-07-02 23:06:01 +0000
-categories: ["reflections"]
+categories: ["mindfulness"]
 tags: ["Buddhism", "Calm", "Ease", "InnerPeace", "Meditation", "MentalHealth", "MindfulBreathing", "Mindfulness", "PersonalGrowth", "PresentMoment", "Spirituality", "Taoism", "ThichNhatHanh", "WuWei", "Zen"]
 image: /assets/images/2a9a7495-3.jpg
 excerpt: "In the teachings of Thich Nhat Hanh, a renowned Zen Buddhist monk, one finds the essence of mindfulness elegantly captured in the meditative practice of mindful breathing. Thich Nhat Hanh invites us to acknowledge: “Breathing in, I feel calm. Breathing out, I feel ease.” It’s a simple yet profound instruction, guiding us towards a journey […]"
