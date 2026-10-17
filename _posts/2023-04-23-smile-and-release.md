@@ -2,7 +2,7 @@
 layout: post
 title: "Smile and Release"
 date: 2023-04-23 22:13:29 +0000
-categories: ["reflections"]
+categories: ["mindfulness"]
 tags: ["Calm", "EmotionalBalance", "InnerPeace", "Meditation", "MindfulBreathing", "Mindfulness", "Nature", "PresentMoment", "SmileAndRelease", "ThichNhatHanh", "Wellbeing", "YouAreHere"]
 image: /assets/images/r0002674.jpg
 excerpt: "In Thich Nhat Hanh’s mindful breathing exercise “Breathing in, I smile; breathing out, I release,” the concepts of smiling and releasing are combined to create a powerful tool for cultivating emotional balance, inner peace, and well-being. The act of smiling is not necessarily directed at a specific object or person. Instead, it serves as a […]"

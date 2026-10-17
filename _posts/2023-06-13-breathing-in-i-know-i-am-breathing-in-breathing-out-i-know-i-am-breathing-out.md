@@ -2,7 +2,7 @@
 layout: post
 title: "breathing in, i know i am breathing in; breathing out, i know i am breathing out"
 date: 2023-06-13 02:59:58 +0000
-categories: [reflections]
+categories: ["mindfulness"]
 tags: [Calm, EmotionalBalance, InnerPeace, Meditation, MindfulBreathing, Mindfulness, Nature, PresentMoment, SmileAndRelease, ThichNhatHanh, Wellbeing, YouAreHere]
 image: /assets/images/r0002725.jpg
 excerpt: "This mindful breathing practice holds a profound depth—it occupies a liminal space between the conscious and unconscious."

@@ -2,7 +2,7 @@
 layout: post
 title: "Mindfulness Through Breath: Five Essential Steps"
 date: 2024-11-25 21:44:16 +0000
-categories: ["reflections"]
+categories: ["mindfulness"]
 tags: ["Anapanasati Sutta", "Breathing Exercises", "Calm and Relaxation", "health", "Meditation", "Meditation Practice", "Mental Health", "Mindful Breathing", "Mindfulness", "Mindfulness Meditation", "Nature and Mindfulness", "Present Moment Awareness", "Thich Nhat Hanh", "Wellness"]
 image: /assets/images/r0002291.jpg
 excerpt: "“Breathing in, I feel calm; breathing out, I feel ease.”A tranquil lake, steady amidst life’s movement, mirrors the stability and calm cultivated through mindful breathing. Mindful breathing, as taught by Thich Nhat Hanh, is a timeless practice rooted in the Anapanasati Sutta (the Sutra on the Full Awareness of Breathing). It is a simple yet […]"
